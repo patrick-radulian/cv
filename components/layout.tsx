@@ -9,7 +9,7 @@ export const siteTitle = "Patrick Radulian"
 
 interface ILayout {
   children: React.ReactNode
-  home: boolean
+  home?: boolean
 }
 
 export default function Layout({children, home}: ILayout) {
