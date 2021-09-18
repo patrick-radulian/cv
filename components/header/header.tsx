@@ -1,6 +1,7 @@
 import Image from "next/image"
 import styles from "./header.module.css"
 import utilStyles from "../../styles/utils.module.css";
+import HeaderEntry from "../header-entry/headerEntry";
 
 export default function Header() {
     return (
@@ -17,37 +18,15 @@ export default function Header() {
             </div>
 
             <div className={styles.headerEntries}>
-                <div className={styles.headerEntry}>
-                    <Image src="/images/person.svg" width={24} height={24} alt="Person"/>
-                    <span className={styles.headerEntryText}>patrick-radulian.com</span>
-                </div>
-
-                <div className={styles.headerEntry}>
-                    <Image src="/images/phone.svg" width={24} height={24} alt="Phone"/>
-                    <span className={styles.headerEntryText}>+43 699 170 51 561</span>
-                </div>
-
-                <div className={styles.headerEntry}>
-                    <Image src="/images/envelope.svg" width={24} height={24} alt="Envelope"/>
-                    <span className={styles.headerEntryText}>patrick.radulian@gmail.com</span>
-                </div>
+                <HeaderEntry imageFileName="person.svg" imageAltText="Person" text="patrick-radulian.com"/>
+                <HeaderEntry imageFileName="phone.svg" imageAltText="Phone" text="+43 699 170 51 561"/>
+                <HeaderEntry imageFileName="envelope.svg" imageAltText="Envelope" text="patrick.radulian@gmail.com"/>
             </div>
 
             <div className={styles.headerEntries}>
-                <div className={styles.headerEntry}>
-                    <Image src="/images/xing.svg" width={24} height={24} alt="Xing Logo"/>
-                    <span className={styles.headerEntryText}>patrick radulian</span>
-                </div>
-
-                <div className={styles.headerEntry}>
-                    <Image src="/images/location.svg" width={24} height={24} alt="Map Location Pin"/>
-                    <span className={styles.headerEntryText}>vienna</span>
-                </div>
-
-                <div className={styles.headerEntry}>
-                    <Image src="/images/linkedin.svg" width={24} height={24} alt="LinkedIn Logo"/>
-                    <span className={styles.headerEntryText}>in/patrickradulian</span>
-                </div>
+                <HeaderEntry imageFileName="xing.svg" imageAltText="Xing Logo" text="patrick radulian"/>
+                <HeaderEntry imageFileName="location.svg" imageAltText="Map Location Pin" text="vienna"/>
+                <HeaderEntry imageFileName="linkedin.svg" imageAltText="LinkedIn Logo" text="in/patrickradulian"/>
             </div>
         </header>
     )
