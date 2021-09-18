@@ -1,0 +1,10 @@
+.mainEntry {
+    display: flex;
+    align-items: center;
+}
+
+.mainEntryText {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: var(--secondary);
+}

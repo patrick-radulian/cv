@@ -1,0 +1,5 @@
+.mainEntryDecoration {
+    width: 300px;
+    height: 0.5rem;
+    transform: skewX(-45deg);
+}
