@@ -15,6 +15,40 @@ export default function Header() {
                 <span className={`${utilStyles.colorSecondary} ${utilStyles.underline}`}>alexander</span>
                 <span className={utilStyles.underline}>radulian</span>
             </div>
+
+            <div className={styles.headerEntries}>
+                <div className={styles.headerEntry}>
+                    <Image src="/images/person.svg" width={24} height={24} alt="Person"/>
+                    <span className={styles.headerEntryText}>patrick-radulian.com</span>
+                </div>
+
+                <div className={styles.headerEntry}>
+                    <Image src="/images/phone.svg" width={24} height={24} alt="Phone"/>
+                    <span className={styles.headerEntryText}>+43 699 170 51 561</span>
+                </div>
+
+                <div className={styles.headerEntry}>
+                    <Image src="/images/envelope.svg" width={24} height={24} alt="Envelope"/>
+                    <span className={styles.headerEntryText}>patrick.radulian@gmail.com</span>
+                </div>
+            </div>
+
+            <div className={styles.headerEntries}>
+                <div className={styles.headerEntry}>
+                    <Image src="/images/xing.svg" width={24} height={24} alt="Xing Logo"/>
+                    <span className={styles.headerEntryText}>patrick radulian</span>
+                </div>
+
+                <div className={styles.headerEntry}>
+                    <Image src="/images/location.svg" width={24} height={24} alt="Map Location Pin"/>
+                    <span className={styles.headerEntryText}>vienna</span>
+                </div>
+
+                <div className={styles.headerEntry}>
+                    <Image src="/images/linkedin.svg" width={24} height={24} alt="LinkedIn Logo"/>
+                    <span className={styles.headerEntryText}>in/patrickradulian</span>
+                </div>
+            </div>
         </header>
     )
 }
