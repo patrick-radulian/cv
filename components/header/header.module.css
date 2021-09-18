@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.profileImage {
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 2rem;
+    margin: 2rem;
+}
