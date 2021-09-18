@@ -3,8 +3,9 @@
     align-items: center;
     font-size: 1.35rem;
     margin: 0.5rem 2rem;
+    color: var(--primary);
 }
 
 .headerEntryText {
-    margin: 0 0.25rem;
+    margin: 0 0.5rem;
 }
