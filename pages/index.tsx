@@ -1,4 +1,6 @@
-import Layout from '../components/layout'
+import Head from 'next/head'
+import Header from '../components/header/header'
+import Main from '../components/main/main'
 import utilStyles from '../styles/utils.module.css'
 
 interface IAllPostsData {
@@ -13,10 +15,16 @@ interface IHome {
 
 export default function Home({ allPostsData }: IHome) {
     return (
-        <Layout home>
-            <section>
-                This site is currently under construction.
-            </section>
-        </Layout>
+        <div>
+            <Head>
+                <link rel="icon" href="/favicon.ico" />
+                <meta name="description" content="Patrick Radulian's CV"/>
+                <meta name="og:title" content="Patrick Radulian" />
+            </Head>
+
+            <Header/>
+
+            <Main/>
+        </div>
     )
 }
