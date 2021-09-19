@@ -1,9 +1,10 @@
-.mainEntryHeader {
+.cvSectionHeader {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.mainEntryText {
+.cvSectionText {
     font-size: 1.5rem;
     margin: 0 1rem;
     color: var(--secondary);

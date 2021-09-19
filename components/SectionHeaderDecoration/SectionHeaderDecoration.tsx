@@ -1,4 +1,4 @@
-import styles from "./cvSectionHeaderDecoration.module.css";
+import styles from "./SectionHeaderDecoration.module.css";
 
 interface IProps {
     color: string

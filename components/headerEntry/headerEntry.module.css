@@ -1,8 +1,8 @@
 .headerEntry {
     display: flex;
     align-items: center;
-    font-size: 1.35rem;
-    margin: 0.5rem 2rem;
+    font-size: 1.25rem;
+    margin: 0.25rem 2rem;
     color: var(--primary);
 }
 

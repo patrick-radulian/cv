@@ -1,5 +1,5 @@
-import CVSectionHeaderDecoration from "../cvSectionHeaderDecoration/cvSectionHeaderDecoration"
-import styles from "./cvSectionHeader.module.css"
+import CVSectionHeaderDecoration from "../SectionHeaderDecoration/SectionHeaderDecoration"
+import styles from "./SectionHeader.module.css"
 
 interface IProps {
     color: string
@@ -8,9 +8,9 @@ interface IProps {
 
 export default function MainEntryHeader(props: IProps) {
     return (
-        <div className={styles.mainEntryHeader}>
+        <div className={styles.cvSectionHeader}>
             <CVSectionHeaderDecoration color={props.color}/>
-            <div className={styles.mainEntryText}>{props.text}</div>
+            <div className={styles.cvSectionText}>{props.text}</div>
             <CVSectionHeaderDecoration color={props.color}/>
         </div>
     )
