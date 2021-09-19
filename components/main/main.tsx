@@ -1,13 +1,24 @@
-import MainEntry from "../mainEntry/mainEntry"
+import CVSection from "../cvSection/cvSection"
 import styles from "./main.module.css"
 
 export default function Main() {
     return (
         <div className={styles.mainEntries}>
-            <MainEntry color="#2B6F26" text="career"/>
-            <MainEntry color="#BD7E31" text="education"/>
-            <MainEntry color="#B9274F" text="skills"/>
-            <MainEntry color="#2E3192" text="languages &amp; hobbies"/>
+            <CVSection color="#2B6F26" text="career">
+                <div></div>
+            </CVSection>
+
+            <CVSection color="#BD7E31" text="education">
+                <div></div>
+            </CVSection>
+
+            <CVSection color="#B9274F" text="skills">
+                <div></div>
+            </CVSection>
+
+            <CVSection color="#2E3192" text="languages &amp; hobbies">
+                <div></div>
+            </CVSection>
         </div>
     )
 }
