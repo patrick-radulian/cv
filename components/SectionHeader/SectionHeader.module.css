@@ -1,10 +1,11 @@
-.cvSectionHeader {
+.sectionHeader {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem 0;
 }
 
-.cvSectionText {
+.sectionText {
     font-size: 1.5rem;
     margin: 0 1rem;
     color: var(--secondary);

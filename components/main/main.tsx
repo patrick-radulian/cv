@@ -1,22 +1,22 @@
 import Section from "../Section/Section"
-import CVSectionEntry from "../SectionEntry/SectionEntry"
+import SectionEntry from "../SectionEntry/SectionEntry"
 import styles from "./main.module.css"
 
 export default function Main() {
     return (
-        <div className={styles.mainEntries}>
+        <div>
             <Section color="#2B6F26" text="career">
-                <CVSectionEntry align="right">
+                <SectionEntry position="left">
                     ui/ux/product design, user research, prototyping, front-end development
-                </CVSectionEntry>
+                </SectionEntry>
 
-                <CVSectionEntry align="center">
+                <SectionEntry position="center">
                     August 2015 &mdash; Now
-                </CVSectionEntry>
+                </SectionEntry>
 
-                <CVSectionEntry align="left">
+                <SectionEntry position="right">
                     semantic web company gmbh
-                </CVSectionEntry>
+                </SectionEntry>
             </Section>
 
             <Section color="#BD7E31" text="education">

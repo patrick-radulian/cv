@@ -8,13 +8,13 @@ interface IProps {
     children: ReactElement | Array<ReactElement>
 }
 
-export default function MainEntry(props: IProps) {
+export default function Section(props: IProps) {
     return (
         <>
-            <section className={styles.cvSection}>
+            <section className={styles.section}>
                 <CVSectionHeader color={props.color} text={props.text}/>
 
-                <div className={styles.cvSectionEntries}>
+                <div className={styles.sectionEntries}>
                     {props.children}
                 </div>
             </section>

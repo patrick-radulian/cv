@@ -2,12 +2,12 @@ import styles from "./SectionEntry.module.css"
 
 interface IProps {
     children: string
-    align: AlignSetting
+    position: "left" | "center" | "right"
 }
 
-export default function CVSectionEntry(props: IProps) {
+export default function SectionEntry(props: IProps) {
     return (
-        <div className={styles.cvSectionEntry} style={{textAlign: props.align}}>
+        <div className={styles.sectionEntry} data-position={props.position}>
             {props.children}
         </div>
     )

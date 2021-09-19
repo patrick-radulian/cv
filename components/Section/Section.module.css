@@ -1,8 +1,7 @@
-.cvSection {
-    max-width: 50vw;
+.section {
     margin: 3rem 0 2rem;
 }
 
-.cvSectionEntries {
+.sectionEntries {
     display: flex;
 }

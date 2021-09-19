@@ -4,7 +4,7 @@ interface IProps {
     color: string
 }
 
-export default function CVSectionHeaderDecoration(props: IProps) {
+export default function SectionHeaderDecoration(props: IProps) {
     return (
         <div className={styles.mainEntryDecoration} style={{background: props.color}}></div>
     )
