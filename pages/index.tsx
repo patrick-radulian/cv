@@ -4,12 +4,9 @@ import Header from '../components/Header/Header'
 import Main from '../components/Main/Main'
 
 export default function Home() {
-    const htmlElementRef = React.useRef<HTMLHtmlElement>(null);
-
     return (
         <div>
             <Head>
-                <html ref={htmlElementRef}/>
                 <title>Patrick Radulian</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Patrick Radulian's CV"/>
