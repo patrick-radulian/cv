@@ -1,18 +1,18 @@
 .header {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 400;
 }
 
 .imageContainer {
-    position: relative;
-
     border: 5px solid var(--tertiary);
     border-radius: 50%;
-
-    padding: 0.5rem;
-    margin: 2rem;
     height: 216px;
+    margin: 2rem;
+    padding: 0.5rem;
+    position: relative;
     width: 216px;
 }
 
@@ -27,6 +27,8 @@
 }
 
 .headerEntries {
-    display: flex;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

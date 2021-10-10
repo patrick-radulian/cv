@@ -21,7 +21,7 @@ export default function Home() {
                 <meta name="description" content="Patrick Radulian's CV"/>
                 <meta name="og:title" content="Patrick Radulian" />
 
-                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap" rel="stylesheet"></link>
             </Head>
 
             <Header/>

@@ -6,6 +6,10 @@
     color: var(--primary);
 }
 
+.headerEntryIcon {
+    flex: 1 0 24px;
+}
+
 .headerEntryText {
     margin: 0 0.5rem;
 }

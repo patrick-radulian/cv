@@ -11,7 +11,10 @@ interface IProps {
 export default function HeaderEntry(props: IProps) {
     return (
         <a className={styles.headerEntry} href={props.link} target="_blank">
-            <Image src={`/images/${props.imageFileName}`} width={24} height={24} alt={props.imageAltText}/>
+            <div className={styles.headerEntryIcon}>
+                <Image src={`/images/${props.imageFileName}`} width={24} height={24} alt={props.imageAltText}/>
+            </div>
+
             <span className={styles.headerEntryText}>{props.text}</span>
         </a>
     )
