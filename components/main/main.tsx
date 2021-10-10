@@ -4,7 +4,7 @@ import styles from "./main.module.css"
 
 export default function Main() {
     return (
-        <div>
+        <div className={styles.sections}>
             <Section color="#2B6F26" text="career">
                 <SectionEntry position="left">
                     ui/ux/product design, user research, prototyping, front-end development
