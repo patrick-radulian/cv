@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from "./Header.module.css"
 import utilStyles from "../../styles/utils.module.css";
-// import HeaderEntry from "../HeaderEntry/HeaderEntry";
+import HeaderEntry from "../Header_Entry/HeaderEntry";
 import React from "react";
 
 export default function Header() {
