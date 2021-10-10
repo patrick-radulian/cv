@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "./headerEntry.module.css"
+import styles from "./HeaderEntry.module.css"
 
 interface IProps {
     imageFileName: string
