@@ -6,5 +6,5 @@
 
 .sectionEntries {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr) minmax(min-content, max-content) minmax(400px, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr) minmax(25ch, max-content) minmax(400px, 1fr) minmax(0, 1fr);
 }

@@ -10,7 +10,6 @@
 
 .sectionEntry_center {
     color: var(--secondary);
-    margin: 0 2rem;
     text-align: center;
     white-space: nowrap;
 }
