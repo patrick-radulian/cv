@@ -31,7 +31,7 @@ export default function Main() {
             <Section color="#2E3192" text="languages &amp; hobbies">
                 <SectionEntry left="german (2nd mother tongue)" center="" right="reading (fantasy, sci-fi), astronomy"/>
                 <SectionEntry left="romanian (mother tongue)" center="" right="gaming, d&amp;d"/>
-                <SectionEntry left="english (fluent)" center="" right="Wwoodworking"/>
+                <SectionEntry left="english (fluent)" center="" right="Woodworking"/>
             </Section>
         </div>
     )

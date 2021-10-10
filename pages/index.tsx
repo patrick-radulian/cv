@@ -2,16 +2,6 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Main from '../components/Main/Main'
 
-interface IAllPostsData {
-    date: string
-    title: string
-    id: string
-}
-
-interface IHome {
-    allPostsData: Array<IAllPostsData>
-}
-
 export default function Home() {
     return (
         <div>
