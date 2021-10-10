@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "./Header.module.css"
+import styles from "./header.module.css"
 import utilStyles from "../../styles/utils.module.css";
 import HeaderEntry from "../HeaderEntry/HeaderEntry";
 import React from "react";
