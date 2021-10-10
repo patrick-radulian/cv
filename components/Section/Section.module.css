@@ -1,7 +1,9 @@
 .section {
+    font-family: 'Noto Sans Mono', monospace;
     margin: 3rem 0 2rem;
 }
 
 .sectionEntries {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr) minmax(min-content, max-content) minmax(400px, 1fr) minmax(0, 1fr);
 }

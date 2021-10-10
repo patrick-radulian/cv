@@ -20,6 +20,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Patrick Radulian's CV"/>
                 <meta name="og:title" content="Patrick Radulian" />
+
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet"></link>
             </Head>
 
             <Header/>

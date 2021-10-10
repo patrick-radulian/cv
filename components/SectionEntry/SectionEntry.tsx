@@ -1,14 +1,19 @@
 import styles from "./SectionEntry.module.css"
 
 interface IProps {
-    children: string
-    position: "left" | "center" | "right"
+    left: string
+    center: string
+    right: string
 }
 
 export default function SectionEntry(props: IProps) {
     return (
-        <div className={styles.sectionEntry} data-position={props.position}>
-            {props.children}
-        </div>
+        <>
+            <div></div>
+            <div className={styles.sectionEntry_left}>{props.left}</div>
+            <div className={styles.sectionEntry_center}>{props.center}</div>
+            <div className={styles.sectionEntry_right}>{props.right}</div>
+            <div></div>
+        </>
     )
 }

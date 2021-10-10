@@ -1,3 +1,4 @@
 .sections {
     display: grid;
+    justify-content: center;
 }

@@ -1,19 +1,19 @@
 .sectionEntry {
+    align-items: flex-start;
+    display: flex;
     line-height: 1.7;
+}
+
+.sectionEntry_left {
+    text-align: end;
+}
+
+.sectionEntry_center {
+    color: var(--secondary);
+    margin: 0 2rem;
     text-align: center;
 }
 
-.sectionEntry[data-position=left] {
-    text-align: right;
-    flex: 1;
-}
-
-.sectionEntry[data-position=center] {
-    color: var(--secondary);
-    margin: 0 2rem;
-}
-
-.sectionEntry[data-position=right] {
-    text-align: left;
-    flex: 1;
+.sectionEntry_right {
+    text-align: start;
 }

@@ -1,5 +1,7 @@
 .mainEntryDecoration {
-    width: 300px;
+    flex: 1 1;
     height: 0.5rem;
+    margin: 0 1rem;
+    max-width: 300px;
     transform: skewX(-45deg);
 }
