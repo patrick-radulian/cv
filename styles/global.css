@@ -2,6 +2,14 @@
     --primary: #404040;
     --secondary: #0092B8;
     --tertiary: #2A1911;
+    --background: #FFFFFF;
+}
+
+:root.dark {
+    --primary: #cbcbd7;
+    --secondary: #2586ab;
+    --tertiary: #6B6B7B;
+    --background: #25252D;
 }
 
 html,
@@ -13,6 +21,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.4;
     font-size: 18px;
+    background: var(--background);
 }
 
 * {
