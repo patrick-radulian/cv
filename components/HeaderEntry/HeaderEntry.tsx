@@ -1,10 +1,11 @@
 import Image from "next/image"
+import { ReactChild } from "react"
 import styles from "./HeaderEntry.module.css"
 
 interface IProps {
     imageFileName: string
     imageAltText: string
-    text: string
+    text: string | ReactChild
     link?: string
 }
 
