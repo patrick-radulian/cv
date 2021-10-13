@@ -27,7 +27,7 @@
 
 @media (max-aspect-ratio: 1/1) {
     .sectionEntry {
-        margin: 0 0 1rem;
+        margin: 0 0 1.5rem;
     }
 
     .sectionEntry_left {
