@@ -2,6 +2,8 @@ import Head from 'next/head'
 import React from 'react'
 import Background from '../components/background/background'
 import Menu from '../components/menu/menu'
+import SVG from "react-inlinesvg";
+import SignatureSVG from "../public/images/Signature.svg"
 
 export default function Home() {
     return (

@@ -7,6 +7,10 @@
     gap: 3rem;
 }
 
+.signature {
+    width: min(80vw, 800px);
+}
+
 .buttons {
     display: flex;
     align-items: center;

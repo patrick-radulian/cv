@@ -6,7 +6,7 @@ import BackgroundImage from "../../public/images/Mountain-Original.jpg";
 const Background: React.FC<{}> = () => {
     return (
         <div className={styles["background-container"]}>
-            <Image priority src={BackgroundImage} layout="fill" objectFit="cover" quality={100}/>
+            <Image priority src={BackgroundImage} layout="fill" objectFit="cover" quality={100} placeholder="blur"/>
         </div>
     )
 }
