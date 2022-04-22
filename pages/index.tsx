@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Background from '../components/background/background'
-import Signature from '../components/signature/signature'
-
+import Menu from '../components/menu/menu'
 
 export default function Home() {
     return (
@@ -20,7 +19,7 @@ export default function Home() {
 
             <Background/>
 
-            <Signature/>
+            <Menu/>
         </div>
     )
 }
