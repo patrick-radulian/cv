@@ -18,9 +18,9 @@ const Menu: React.FC<{}> = () => {
         <div className={styles.menu}>
             <Image src={SignatureSVG} className={styles.signature}/>
 
-            <div className={styles.buttons}>
-                <Link href="/portfolio" passHref><Button label="Portfolio"/></Link>
-                <Link href="/cv" passHref><Button label="CV"/></Link>
+            <div className={styles.links}>
+                <Link href="/portfolio" ><a className={styles.link}>Portfolio</a></Link>
+                <Link href="/cv"><a className={styles.link}>CV</a></Link>
             </div>
         </div>
     )
