@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
-import Header from '../components/header/header'
-import Main from '../components/main/main'
+import Background from '../components/background/background'
+import Signature from '../components/signature/signature'
+
 
 export default function Home() {
     return (
@@ -9,15 +10,17 @@ export default function Home() {
             <Head>
                 <title>Patrick Radulian</title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta name="description" content="Patrick Radulian's CV"/>
-                <meta name="og:title" content="Patrick Radulian" />
+                <meta name="description" content="Patrick Radulian's CV and Portfolio"/>
+                <meta name="og:title" content="Patrick Radulian"/>
 
-                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif+Display:wdth@62.5;100&display=swap" rel="stylesheet"></link>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
             </Head>
 
-            <Header/>
+            <Background/>
 
-            <Main/>
+            <Signature/>
         </div>
     )
 }

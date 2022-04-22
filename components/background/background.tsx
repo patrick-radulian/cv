@@ -1,0 +1,14 @@
+import React from "react"
+import Image from "next/image"
+import styles from "./background.module.css"
+import BackgroundImage from "../../public/images/Mountain-Original.jpg";
+
+const Background: React.FC<{}> = () => {
+    return (
+        <div className={styles["background-container"]}>
+            <Image priority src={BackgroundImage} layout="fill" objectFit="cover" quality={100}/>
+        </div>
+    )
+}
+
+export default Background;
