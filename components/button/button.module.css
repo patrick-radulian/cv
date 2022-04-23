@@ -1,8 +1,8 @@
 .button {
     font-size: 1.25rem;
-    color: white;
+    color: #E0E0E0;
     background-color: transparent;
-    border: 3px solid white;
+    border: 3px solid #E0E0E0;
     padding-block: 0.5rem;
     flex: 1 1 80vw;
 }
