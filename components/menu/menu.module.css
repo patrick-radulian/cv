@@ -1,3 +1,10 @@
+.menu-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .menu {
     width: min(80vw, 800px);
     margin-inline: auto;
@@ -9,6 +16,47 @@
 
 .signature {
     width: min(80vw, 800px);
+    z-index: 0;
+}
+
+.cloud {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cloud1 {
+    transform: translate3d(0, 30%, 0);
+    background-image: url(../../public/images/Clouds1.png);
+    width: 1692px;
+    height: 1000px;
+    animation: cloud1 600s -300s linear infinite;
+}
+
+.cloud2 {
+    transform: translate3d(0, 50%, 0);
+    background-image: url(../../public/images/Clouds2.png);
+    width: 1762px;
+    height: 962px;
+    animation: cloud2 300s -150s linear infinite;
+}
+
+@keyframes cloud1 {
+    0% {
+        right: -1800px;
+    }
+    100% {
+        right: 105%;
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        right: -2000px;
+    }
+    100% {
+        right: 105%;
+    }
 }
 
 .links {
@@ -17,6 +65,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+    z-index: 2;
 }
 
 .link {
