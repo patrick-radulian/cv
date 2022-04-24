@@ -10,13 +10,19 @@ const SkillMeter: React.FC<SkillMeterProps> = ({skillLevel, skillFraction}) => {
     return (
         <div className={styles["skill-meter"]}>
             {Array.from(Array(5).keys()).map(n => {
-                let style: React.CSSProperties = {
-                    opacity: 0.5
-                };
+                let className: string = "";
 
-                if (n < skillLevel) style.opacity = 1;
+                if (n === skillLevel) {
+                    className = skillFraction;
+                } else if (n > skillLevel) {
+                    className = "empty";
+                }
 
-                return <div className={styles["skill-meter-section"]} style={style}/>;
+                return (
+                    <div className={styles["skill-meter-section"]}>
+                        <div className={`${styles["skill-meter-section-fill"]} ${className}`}/>
+                    </div>
+                );
             })}
         </div>
     )
