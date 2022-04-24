@@ -7,7 +7,7 @@ const About: React.FC<{}> = () => {
     return (
         <>
             <CVSection icon={AboutIcon} label="About">
-                <p>
+                <p className="justify">
                     <Triangles/> As a self-taught front-end engineer, user
                     interface designer, and user experience designer - with a passion for code, art, games, vr,
                     and more - I delight in envisioning, designing, and producing experiences which go beyond
@@ -15,7 +15,7 @@ const About: React.FC<{}> = () => {
                     and productive.
                 </p>
 
-                <p>
+                <p className="justify">
                     This is one of the reasons why I found my calling in the combination of front-end engineering
                     and design thinking. These two disciplines bring together the fundamental building blocks of
                     humancentered product design and development.

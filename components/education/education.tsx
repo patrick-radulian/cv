@@ -13,7 +13,7 @@ const Education: React.FC<{}> = () => {
                         <Triangles/> Active
                     </h4>
 
-                    <p>
+                    <p className="justify">
                         Continuous self-taught learning with the
                         help of platforms like Udacity, Udemy,
                         Interaction Design Foundation, and more.
@@ -25,7 +25,7 @@ const Education: React.FC<{}> = () => {
                         <Triangles/> 2010
                     </h4>
 
-                    <p>
+                    <p className="justify">
                         Teacher training program for English and
                         Information Technology (canceled).
                     </p>
@@ -40,7 +40,7 @@ const Education: React.FC<{}> = () => {
                         <Triangles/> 2005
                     </h4>
 
-                    <p>
+                    <p className="justify">
                         First half of the Digital Animation
                         Program.
                     </p>
