@@ -1,26 +1,20 @@
 :root {
-    --primary: #404040;
-    --secondary: #0092B8;
-    --tertiary: #2A1911;
-    --background: #FFFFFF;
-}
-
-:root.dark {
-    --primary: #cbcbd7;
-    --secondary: #2586ab;
-    --tertiary: #6B6B7B;
-    --background: #25252D;
+    --primary: #E0E0E0;
+    --secondary: #810036;
+    --tertiary: #404040;
+    --shadow: #40404090;
 }
 
 html,
 body {
-    color: var(--primary);
+    color: var(--tertiary);
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     line-height: 1.4;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 * {
@@ -28,7 +22,6 @@ body {
 }
 
 a {
-    color: var(--secondary);
     text-decoration: none;
 }
 

@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import React from 'react'
+import Arrow from '../components/arrow/arrow'
 import Background from '../components/background/background'
-import Menu from '../components/menu/menu'
+import Clouds from '../components/clouds/clouds'
+import CV from '../components/cv/cv'
+import Portfolio from '../components/portfolio/portfolio'
+import StartScreen from '../components/start-screen/start-screen'
 
 export default function Home() {
     return (
@@ -17,7 +21,17 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
             </Head>
 
-            <Menu/>
+            <Background/>
+
+            <StartScreen/>
+
+            <Clouds/>
+
+            <Arrow/>
+
+            <Portfolio/>
+
+            <CV/>
         </div>
     )
 }

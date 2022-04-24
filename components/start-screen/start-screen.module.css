@@ -1,0 +1,55 @@
+.start-screen-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+.signature {
+    width: min(80vw, 800px);
+    margin-inline: auto;
+    display: flex;
+    align-items: flex-end;
+    z-index: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.link {
+    display: flex;
+    place-content: center;
+    font-size: 1.25rem;
+    color: var(--primary);
+    background-color: transparent;
+    border: 3px solid var(--primary);
+    filter: drop-shadow(0 1px 1px var(--shadow));
+    padding-block: 0.5rem;
+    flex: 1 1 80vw;
+}
+
+@media screen and (max-width: 800px) {
+    .signature {
+        display: grid;
+    }
+
+    .first-name {
+        width: 50vw;
+    }
+
+    .last-name {
+        margin-bottom: 0px;
+        width: 60vw;
+        justify-self: flex-end;
+        transform: translate(0, -40%);
+    }
+}

@@ -1,10 +1,6 @@
 import React from "react"
 
-type PortfolioProps = {
-
-}
-
-const Portfolio: React.FC<PortfolioProps> = (props: PortfolioProps) => {
+const Portfolio: React.FC<{}> = () => {
     return (
         <div>Portfolio</div>
     )
