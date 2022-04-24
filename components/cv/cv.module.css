@@ -1,0 +1,31 @@
+.container {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    padding-block: 2rem;
+}
+
+.content {
+    width: min(80vw, 800px);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.header {
+    flex: 1;
+    display: grid;
+    place-content: center;
+}
+
+.tags {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--secondary);
+    text-transform: uppercase;
+    margin-block: 1rem;
+}
+
+.tag {
+    margin: 0;
+}

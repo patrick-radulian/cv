@@ -29,9 +29,9 @@ export default function Home() {
 
             <Arrow/>
 
-            <Portfolio/>
-
             <CV/>
+
+            {/* <Portfolio/> */}
         </div>
     )
 }

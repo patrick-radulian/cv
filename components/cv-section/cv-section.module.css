@@ -1,0 +1,19 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-separator {
+    flex: 1;
+}
+
+.section-center {
+    margin-inline: 1rem;
+}
+
+.section-title {
+    font-weight: 500;
+    margin: 0;
+}

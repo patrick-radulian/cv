@@ -1,0 +1,12 @@
+.skill-meter {
+    width: 100%;
+    height: 0.75rem;
+    display: flex;
+    transform: skewX(-45deg);
+}
+
+.skill-meter-section {
+    flex: 1;
+    margin-inline: 1px;
+    background: var(--secondary);
+}
