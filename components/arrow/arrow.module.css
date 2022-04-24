@@ -19,7 +19,7 @@
     margin-inline: auto;
     top: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    animation: arrow-base 3s 2s ease-out forwards;
+    animation: arrow-base 3s 3.5s ease-out forwards;
     animation-iteration-count: 2;
 }
 
@@ -32,7 +32,7 @@
     margin-inline: auto;
     bottom: 0;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    animation: arrow-v 3s 2.6s ease-out forwards;
+    animation: arrow-v 3s 4.1s ease-out forwards;
     animation-iteration-count: 2;
 }
 
