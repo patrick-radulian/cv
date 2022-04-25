@@ -11,8 +11,10 @@
 
 .skill-group {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 1rem;
     position: relative;
 }
 
@@ -23,17 +25,17 @@
 }
 
 .group-a {
-    height: 4rem;
+
 }
 
 .group-b {
-    height: 3.5rem;
+
 }
 
 .group-c {
-    height: 2.5rem;
+
 }
 
 .group-d {
-    height: 2.5rem;
+
 }

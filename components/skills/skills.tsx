@@ -24,54 +24,26 @@ const Skills: React.FC<{}> = () => {
             <CVSection icon={SkillsIcon} label="Skills">
                 <div className={styles["skill-grid"]}>
                     <div className={`${styles["skill-group"]} ${styles["group-a"]}`}>
-                        <div className={styles.skill}>
-                            <Image src={HTML} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={CSS} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={JS} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={REACT} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={TS} layout="fill" objectFit="contain"/>
-                        </div>
+                        <Image src={HTML} width={80} height={80}/>
+                        <Image src={CSS} width={80} height={80}/>
+                        <Image src={JS} width={80} height={80}/>
+                        <Image src={REACT} width={80} height={80}/>
+                        <Image src={TS} width={80} height={80}/>
                     </div>
                     <div className={`${styles["skill-group"]} ${styles["group-b"]}`}>
-                        <div className={styles.skill}>
-                            <Image src={UXPIN} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={ADOBECS} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={PROTOIO} layout="fill" objectFit="contain"/>
-                        </div>
+                        <Image src={UXPIN} width={60} height={60}/>
+                        <Image src={ADOBECS} width={60} height={60}/>
+                        <Image src={PROTOIO} width={60} height={60}/>
                     </div>
                     <div className={`${styles["skill-group"]} ${styles["group-c"]}`}>
-                        <div className={styles.skill}>
-                            <Image src={WEBPACK} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={GIT} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={UNITY} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={UNREAL} layout="fill" objectFit="contain"/>
-                        </div>
+                        <Image src={WEBPACK} width={45} height={45}/>
+                        <Image src={GIT} width={45} height={45}/>
+                        <Image src={UNITY} width={45} height={45}/>
+                        <Image src={UNREAL} width={45} height={45}/>
                     </div>
                     <div className={`${styles["skill-group"]} ${styles["group-d"]}`}>
-                        <div className={styles.skill}>
-                            <Image src={CS} layout="fill" objectFit="contain"/>
-                        </div>
-                        <div className={styles.skill}>
-                            <Image src={NODE} layout="fill" objectFit="contain"/>
-                        </div>
+                        <Image src={CS} layout="fill" objectFit="contain"/>
+                        <Image src={CS} layout="fill" objectFit="contain"/>
                     </div>
                 </div>
             </CVSection>
