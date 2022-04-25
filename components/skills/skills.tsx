@@ -42,8 +42,8 @@ const Skills: React.FC<{}> = () => {
                         <Image src={UNREAL} width={45} height={45}/>
                     </div>
                     <div className={`${styles["skill-group"]} ${styles["group-d"]}`}>
-                        <Image src={CS} layout="fill" objectFit="contain"/>
-                        <Image src={CS} layout="fill" objectFit="contain"/>
+                        <Image src={CS} width={45} height={45}/>
+                        <Image src={NODE} width={45} height={45}/>
                     </div>
                 </div>
             </CVSection>
