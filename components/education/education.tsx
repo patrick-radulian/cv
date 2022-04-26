@@ -8,7 +8,7 @@ const Education: React.FC<{}> = () => {
     return (
         <>
             <CVSection className={styles.education} icon={EducationIcon} label="Education">
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> Active
                     </h4>
@@ -20,7 +20,7 @@ const Education: React.FC<{}> = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> 2010
                     </h4>
@@ -35,7 +35,7 @@ const Education: React.FC<{}> = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> 2005
                     </h4>

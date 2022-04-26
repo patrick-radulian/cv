@@ -8,7 +8,7 @@ const WorkExperience: React.FC<{}> = () => {
     return (
         <>
             <CVSection icon={WorkIcon} label="Work Experience">
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> August 2015 &mdash; March 2022
                     </h4>
@@ -37,7 +37,7 @@ const WorkExperience: React.FC<{}> = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> January 2015 &mdash; July 2015
                     </h4>
@@ -58,7 +58,7 @@ const WorkExperience: React.FC<{}> = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="swiper-no-swiping">
                     <h4>
                         <Triangles/> September 2013 &mdash; December 2014
                     </h4>

@@ -19,7 +19,7 @@ const Main: React.FC<{}> = () => {
 
     return (
         <main className={styles.main}>
-            <Swiper pagination={pagination} modules={[Pagination]}>
+            <Swiper pagination={pagination} modules={[Pagination]} noSwiping>
                 <SwiperSlide><CV/></SwiperSlide>
                 <SwiperSlide><Portfolio/></SwiperSlide>
             </Swiper>
