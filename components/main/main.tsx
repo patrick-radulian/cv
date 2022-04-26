@@ -3,26 +3,31 @@ import SwipeableViews from 'react-swipeable-views'
 import styles from "./main.module.css"
 import CV from "components/cv/cv";
 import Portfolio from "components/portfolio/portfolio";
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination, SwiperOptions } from "swiper"
+import "swiper/css";
+import "swiper/css/pagination";
+import { PaginationOptions, SwiperEvents } from "swiper/types";
 
 const Main: React.FC<{}> = () => {
-    const [index, setIndex] = React.useState<number>(0);
+    const pagination: PaginationOptions = {
+        clickable: true,
+        renderBullet: (index: number, className: string) => {
+            return `<span class="${className}"></span>`;
+        },
+    };
 
     return (
         <main className={styles.main}>
-            <nav className={styles.nav}>
-                <button className={styles["nav-button"]} onClick={() => setIndex(0)}>
-                    <div className={`${styles.bullet} ${index === 0 && "active"}`}/>
-                </button>
-
-                <button className={styles["nav-button"]} onClick={() => setIndex(1)}>
-                    <div className={`${styles.bullet} ${index === 1 && "active"}`}/>
-                </button>
-            </nav>
-
-            <SwipeableViews index={index} onChangeIndex={index => setIndex(index)} hysteresis={0.2}>
+            {/* <SwipeableViews index={index} onChangeIndex={index => setIndex(index)} hysteresis={0.2}>
                 <CV/>
                 <Portfolio/>
-            </SwipeableViews>
+            </SwipeableViews> */}
+
+            <Swiper pagination={pagination} modules={[Pagination]}>
+                <SwiperSlide><CV/></SwiperSlide>
+                <SwiperSlide><CV/></SwiperSlide>
+            </Swiper>
         </main>
     )
 }

@@ -18,7 +18,7 @@
     "remark-html": "^13.0.1",
     "sass": "^1.38.2",
     "react-inlinesvg": "^3.0.0",
-    "react-swipeable-views": "^0.14.0"
+    "swiper": "^8.1.4"
   },
   "devDependencies": {
     "@types/node": "^16.7.10",
