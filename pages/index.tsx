@@ -1,10 +1,10 @@
+import Main from 'components/main/main'
 import Head from 'next/head'
 import React from 'react'
 import Arrow from '../components/arrow/arrow'
 import Background from '../components/background/background'
 import Clouds from '../components/clouds/clouds'
-import CV from '../components/cv/cv'
-import Portfolio from '../components/portfolio/portfolio'
+
 import StartScreen from '../components/start-screen/start-screen'
 
 export default function Home() {
@@ -29,9 +29,7 @@ export default function Home() {
 
             <Arrow/>
 
-            <CV/>
-
-            {/* <Portfolio/> */}
+            <Main/>
         </div>
     )
 }

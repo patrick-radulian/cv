@@ -1,0 +1,35 @@
+.main {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    padding-block: 1rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 3rem;
+    margin-inline: auto;
+}
+
+.nav-button {
+    display: grid;
+    place-content: center;
+    border: none;
+    padding: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+}
+
+.bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+}
+
+.bullet:global(.active) {
+    background-color: var(--secondary);
+}

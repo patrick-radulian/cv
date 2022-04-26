@@ -1,7 +1,5 @@
 .container {
-    background-color: var(--primary);
-    color: var(--tertiary);
-    padding-block: 2rem;
+    padding-block: 1rem;
 }
 
 .content {
