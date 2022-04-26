@@ -14,7 +14,7 @@ const CV: React.FC<{}> = () => {
                 <header className={styles.header}>
                     <Image src={Portrait} width={200} height={196} objectFit="contain"/>
 
-                    <div className={styles.tags}>
+                    <div className={`${styles.tags} swiper-no-swiping`}>
                         <p className={styles.tag}>Frontend Engineer</p>
                         <p className={styles.tag}>UI/UX Designer</p>
                         <p className={styles.tag}>Dreamer</p>

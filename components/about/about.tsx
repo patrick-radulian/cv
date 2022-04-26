@@ -8,11 +8,10 @@ const About: React.FC<{}> = () => {
         <>
             <CVSection icon={AboutIcon} label="About">
                 <p className="justify swiper-no-swiping">
-                    <Triangles/> As a self-taught front-end engineer, user
-                    interface designer, and user experience designer - with a passion for code, art, games, vr,
-                    and more - I delight in envisioning, designing, and producing experiences which go beyond
-                    solving people's problems. I love to create moments of joy that make people feel successful
-                    and productive.
+                    <Triangles/> As a self-taught front-end engineer, UI designer, and UX designer - with a
+                    passion for code, art, games, vr, and more - I delight in envisioning, designing, and
+                    producing experiences which go beyond solving people's problems. I love to create moments
+                    of joy that make people feel successful and productive.
                 </p>
 
                 <p className="justify swiper-no-swiping">
