@@ -9,7 +9,7 @@ import Skills from "../skills/skills"
 
 const CV: React.FC<{}> = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <div className={styles.content}>
                 <header className={styles.header}>
                     <Image src={Portrait} width={200} height={196} objectFit="contain"/>

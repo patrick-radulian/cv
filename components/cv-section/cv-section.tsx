@@ -6,11 +6,12 @@ type CVSectionProps = {
     icon: any
     label: string
     children: React.ReactElement | Array<React.ReactElement>
+    className?: string
 }
 
-const CVSection: React.FC<CVSectionProps> = ({icon, label, children}) => {
+const CVSection: React.FC<CVSectionProps> = ({icon, label, children, className}) => {
     return (
-        <section>
+        <section className={className}>
             <div className={styles["section-header"]}>
                 <hr className={styles["section-separator"]}/>
 

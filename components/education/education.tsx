@@ -6,8 +6,8 @@ import Triangles from "../triangles/triangles";
 
 const Education: React.FC<{}> = () => {
     return (
-        <div className={styles.education}>
-            <CVSection icon={EducationIcon} label="Education">
+        <>
+            <CVSection className={styles.education} icon={EducationIcon} label="Education">
                 <div>
                     <h4>
                         <Triangles/> Active
@@ -50,7 +50,7 @@ const Education: React.FC<{}> = () => {
                     </p>
                 </div>
             </CVSection>
-        </div>
+        </>
     )
 }
 

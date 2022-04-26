@@ -27,8 +27,8 @@ import FACILITATING from "public/images/skills/Facilitating.svg"
 
 const Skills: React.FC<{}> = () => {
     return (
-        <div className={styles.skills}>
-            <CVSection icon={SkillsIcon} label="Skills">
+        <>
+            <CVSection className={styles.skills} icon={SkillsIcon} label="Skills">
                 <div className={styles["skill-grid"]}>
                     <div className={styles["skill-group"]}>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><Image src={HTML} width={80} height={80} className={styles.skill}/></a>
@@ -87,7 +87,7 @@ const Skills: React.FC<{}> = () => {
                     </div>
                 </div>
             </CVSection>
-        </div>
+        </>
     )
 }
 

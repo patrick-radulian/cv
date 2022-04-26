@@ -19,14 +19,9 @@ const Main: React.FC<{}> = () => {
 
     return (
         <main className={styles.main}>
-            {/* <SwipeableViews index={index} onChangeIndex={index => setIndex(index)} hysteresis={0.2}>
-                <CV/>
-                <Portfolio/>
-            </SwipeableViews> */}
-
             <Swiper pagination={pagination} modules={[Pagination]}>
                 <SwiperSlide><CV/></SwiperSlide>
-                <SwiperSlide><CV/></SwiperSlide>
+                <SwiperSlide><Portfolio/></SwiperSlide>
             </Swiper>
         </main>
     )
