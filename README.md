@@ -1,5 +1,5 @@
 <div style="text-align: center">
-<p><img src="/public/images/Portrait.png"/></p>
+<p style="text-align: center"><img src="/public/images/Portrait.png"/></p>
 
 <div>
     <h1>CV</h1>
