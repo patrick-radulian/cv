@@ -1,5 +1,5 @@
 :root {
-    --primary: #E0E0E0;
+    --primary: #e0e0e0;
     --secondary: #810036;
     --tertiary: #404040;
     --shadow: #40404090;
@@ -10,7 +10,7 @@ body {
     color: var(--tertiary);
     padding: 0;
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     text-shadow: 0 1px rgb(255 255 255 / 70%);
