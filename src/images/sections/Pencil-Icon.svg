@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Icon--Education-" serif:id="Icon (Education)">
+        <path d="M34.042,0.375C15.479,0.375 0.375,15.496 0.375,34.083C0.375,52.671 15.479,67.792 34.042,67.792C52.629,67.792 67.75,52.671 67.75,34.083C67.75,15.496 52.629,0.375 34.042,0.375M34.042,4.542C50.375,4.542 63.583,17.792 63.583,34.083C63.583,50.375 50.375,63.625 34.042,63.625C17.75,63.625 4.542,50.375 4.542,34.083C4.542,17.792 17.75,4.542 34.042,4.542" style="fill:rgb(88,89,91);fill-rule:nonzero;stroke:rgb(89,89,89);stroke-width:0.75px;"/>
+        <g id="Pencil-Icon.svg" transform="matrix(0.0916908,0,0,0.0916908,34.5,34.5)">
+            <g transform="matrix(1,0,0,1,-256,-256)">
+                <g>
+                    <path d="M422.953,176.019C423.502,175.539 424.043,175.044 424.565,174.521L446.337,152.749C459.22,139.866 459.22,118.978 446.337,106.095L405.903,65.661C393.02,52.778 372.132,52.778 359.25,65.661L337.478,87.433C336.955,87.956 336.46,88.497 335.98,89.046L422.953,176.019Z" style="fill:rgb(191,191,191);fill-rule:nonzero;"/>
+                    <path d="M71.316,354.683L157.317,440.684L106.658,448.342L56,456L63.658,405.341L71.316,354.683Z" style="fill:rgb(191,191,191);fill-rule:nonzero;"/>
+                    <path d="M349.143,125.535L118.982,355.694L106.541,343.253L336.701,113.094L324.26,100.653L81.659,343.253L168.747,430.341L411.348,187.74L349.143,125.535Z" style="fill:rgb(191,191,191);fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

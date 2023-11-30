@@ -1,0 +1,27 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-separator {
+    flex: 1;
+}
+
+.section-center {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+    margin-inline: 1rem;
+}
+
+.section-title {
+    font-weight: 500;
+    margin: 0;
+}
+
+.section-icon {
+    width: 48px;
+    height: 48px;
+}

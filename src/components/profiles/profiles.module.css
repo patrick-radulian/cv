@@ -1,0 +1,24 @@
+.container {
+    width: min(80vw, 1000px);
+    margin-inline: auto;
+}
+
+.separator {
+    margin-block: 2rem;
+}
+
+.profiles {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+
+.link {
+    width: 6rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}

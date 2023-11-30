@@ -1,0 +1,18 @@
+.station {
+    margin-bottom: 4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.company {
+    text-align: start;
+}
+
+.time {
+    text-align: end;
+}

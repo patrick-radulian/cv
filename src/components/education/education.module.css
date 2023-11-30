@@ -1,0 +1,8 @@
+.education {
+    flex: 1 1 200px;
+}
+
+.institute {
+    text-align: end;
+    color: var(--shadow)
+}

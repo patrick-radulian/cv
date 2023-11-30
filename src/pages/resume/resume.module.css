@@ -1,0 +1,10 @@
+.education-and-skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 800px) {
+    .education-and-skills {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,78 @@
+:root {
+    --primary: #e0e0e0f0;
+    --secondary: #810036;
+    --tertiary: #404040;
+    --shadow: #40404090;
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-image: url(../src/images/background/Mountain-Original.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html,
+body {
+    color: var(--tertiary);
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.32;
+    overflow-x: hidden;
+    text-shadow: 0 1px rgb(255 255 255 / 70%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.justify {
+    text-align: justify;
+}
+
+p,
+.p {
+    margin-block: 1rem;
+}
+
+.mobile-p {
+    display: inline;
+}
+
+li {
+    line-height: 1.075;
+    margin-block: 0.5rem;
+}
+li::marker {
+    font-size: 1.25rem;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-p {
+        display: block;
+    }
+}
