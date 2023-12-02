@@ -8,97 +8,195 @@ const WorkExperience: React.FC = () => {
     return (
         <ResumeSection icon={WorkIcon} label="Work Experience">
             <div className={styles.station}>
-                <h4 className={styles.header}>
-                    <div className={styles.company}>
-                        <Triangles /> Dynatrace Austria GmbH
-                    </div>
-                    <p className={styles.time}>Since August 2022</p>
-                </h4>
-
-                <p className="justify">
-                    Dynatrace gave me the opportunity to build upon my knowledge as a front-end engineer and expand it
-                    with valuable new lessons in unit- and e2e testing, visual regression testing, build configuration,
-                    git flow optimization, and cross-team and cross-project collaboration.
+                <div className={styles.triangles}>
+                    <Triangles />
+                </div>
+                <strong className={styles.employer}>Dynatrace Austria GmbH</strong>
+                <p className={styles.position}>
+                    <em>Senior Software Engineer</em>
                 </p>
+                <p className={styles.time}>
+                    <em>Since Aug. 2022</em>
+                </p>
+                <div className={styles.description}>
+                    <ul>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Improvement of the existing applications and the design system using React, Node, Styled
+                                Components, etc.
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Roughly 50 new unit tests (Jest), E2E tests & visual regression tests (TestCafé &
+                                Playwright) to improve test coverage by around 15%
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Automation of app translation with Jenkins to speed up the i18n workflow by around 50%
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div className={styles.station}>
-                <h4 className={styles.header}>
-                    <div className={styles.company}>
-                        <Triangles /> TheVentury GmbH
-                    </div>
-                    <p className={styles.time}>May 2022 &mdash; July 2022</p>
-                </h4>
-
-                <p className="justify">
-                    As a senior front-end engineer, I support TheVentury in a large variety of internal and
-                    customer-facing projects, while concentrating on refactoring and improving vanilla-js projects and
-                    react applications.
+                <div className={styles.triangles}>
+                    <Triangles />
+                </div>
+                <strong className={styles.employer}>TheVentury GmbH</strong>
+                <p className={styles.position}>
+                    <em>Senior Frontend Engineer</em>
                 </p>
+                <p className={styles.time}>
+                    <em>May 2022 - July 2022</em>
+                </p>
+                <div className={styles.description}>
+                    <ul>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Maintenance and further development of existing legacy and vanilla js applications for 3
+                                major customers
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Refactoring and new development of React / PHP applications for several small companies
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div className={styles.station}>
-                <h4 className={styles.header}>
-                    <div className={styles.company}>
-                        <Triangles /> Semantic Web Company GmbH
-                    </div>
-                    <p className={styles.time}>August 2015 &mdash; March 2022</p>
-                </h4>
-
-                <p className="justify">
-                    Initially I joined Semantic Web Company as a front-end engineer, becoming a part of the product
-                    development scrum-team which counted eight engineers. My responsibilities encompassed refactoring
-                    legacy code, transforming templates from an old Java MVC architecture to front-end rendered
-                    components, writing new features and components.
+                <div className={styles.triangles}>
+                    <Triangles />
+                </div>
+                <strong className={styles.employer}>Semantic Web Company GmbH</strong>
+                <p className={styles.position}>
+                    <em>Frontend Engineer & UI/UX Designer</em>
                 </p>
-
-                <p className="justify">
-                    I've used both legacy technologies, such as angular.js and YUI, as well as a modern tech stack,
-                    including react, webpack, css-modules, and more. Additionally I raised awareness for good UI and UX
-                    design, which in 2019 turned me into the principal UI/UX designer on the team. This added
-                    prototyping, user testing, and other design thinking tasks to my responsibilities.
+                <p className={styles.time}>
+                    <em>Aug. 2015 - May 2022</em>
                 </p>
-
-                <p className="justify">
-                    Finally, I assisted with onboarding and guiding new junior front-end engineers, helping them to make
-                    sense of the code base and to continue learning.
-                </p>
+                <div className={styles.description}>
+                    <ul>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">3 years internal Design Thinking Advocate</span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                UI/UX design of 5 applications and over 50 features, from sketches and early paper
+                                prototypes interactive code prototypes
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                User interviews and early user tests for around 5 internal projects / features
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">Moderation of a two-day internal design sprint</span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Maintenance and refactoring of existing legacy code applications
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                New development of over 50 features using vanilla-js, Angular, React, jQuery, D3
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Integration of the frontend with a semantic web backend architecture
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">Mentoring for junior front-end developers</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div className={styles.station}>
-                <h4 className={styles.header}>
-                    <div className={styles.company}>
-                        <Triangles /> OE24 GmbH
-                    </div>
-                    <p className={styles.time}>January 2015 &mdash; July 2015</p>
-                </h4>
-
-                <p className="justify">
-                    At OE24 GmbH, where I was a member of a team of seven, my tasks primarily focused on designing and
-                    building new website components for advertisements and events, using a combination of plain
-                    JavaScript, jQuery, and plain CSS.
+                <div className={styles.triangles}>
+                    <Triangles />
+                </div>
+                <strong className={styles.employer}>OE24 GmbH</strong>
+                <p className={styles.position}>
+                    <em>Frontend Engineer</em>
                 </p>
-
-                <p className="justify">
-                    For special events (such as the Eurovision Song Contest) I had the opportunity to experiment with
-                    features like HTML Canvas and 3D animations.
+                <p className={styles.time}>
+                    <em>Jan. 2015 - July 2015</em>
                 </p>
+                <div className={styles.description}>
+                    <ul>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">Design and development of 4 new websites</span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Design of special event pages such as Eurovision Song Contest
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">Vanilla-js, jQuery, CSS, HTML Canvas & 3D Animation</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div>
-                <h4 className={styles.header}>
-                    <div className={styles.company}>
-                        <Triangles /> Syntax Design
-                    </div>
-                    <p className={styles.time}>September 2013 &mdash; December 2014</p>
-                </h4>
-
-                <p className="justify">
-                    As an entrepreneur I made it my mission to offer small and middle-sized companies a complete
-                    branding service. This service included the design and implementation of websites, both custombuilt
-                    and realized with WordPress templates, as well as designing and printing business cards, letters,
-                    envelopes and more.
+            <div className={styles.station}>
+                <div className={styles.triangles}>
+                    <Triangles />
+                </div>
+                <strong className={styles.employer}>Syntax Design</strong>
+                <p className={styles.position}>
+                    <em>Web designer & graphic designer</em>
                 </p>
+                <p className={styles.time}>
+                    <em>Sep. 2013 - Dec. 2014</em>
+                </p>
+                <div className={styles.description}>
+                    <ul>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">Branding service</span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Design and development of websites (handmade and using templates) for 4 SMEs
+                            </span>
+                        </li>
+                        <li>
+                            <span className="bullet">•</span>
+                            <span className="bullet-value">
+                                Design and production of various printed materials (business cards, stationery,
+                                envelopes, etc.) as a cooperation partner for around 50 customers
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </ResumeSection>
     );

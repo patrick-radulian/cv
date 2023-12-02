@@ -1,18 +1,44 @@
 .station {
-    margin-bottom: 4rem;
+    display: grid;
+    grid-template-areas: "triangles employer employer" "triangles position time" "description description description";
+    grid-template-columns: calc(15px + 0.5ch) 1fr max-content;
+    margin-block: 3rem;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+.triangles {
+    grid-area: triangles;
 }
 
-.company {
+.employer {
+    grid-area: employer;
     text-align: start;
 }
 
+.position {
+    grid-area: position;
+    text-align: start;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
 .time {
+    grid-area: time;
     text-align: end;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.description {
+    grid-area: description;
+}
+
+@media screen and (max-width: 800px) {
+    .station {
+        grid-template-areas: "triangles employer" "triangles position" "triangles time" "description description";
+        grid-template-columns: calc(15px + 0.5ch) 1fr;
+    }
+
+    .time {
+        margin-top: 0.5rem;
+    }
 }

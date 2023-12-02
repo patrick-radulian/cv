@@ -1,12 +1,11 @@
 .header {
-    flex: 1;
     display: grid;
     place-content: center;
 }
 
 .portrait {
     width: 250px;
-    margin: 2rem 2rem 1rem;
+    margin-top: 2rem;
 }
 
 .tags {

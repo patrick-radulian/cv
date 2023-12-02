@@ -15,7 +15,7 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({ icon, label, children, cl
                 <hr className={styles["section-separator"]} />
 
                 <div className={styles["section-center"]}>
-                    <img src={icon} className={styles["section-icon"]} alt="" />
+                    <img src={icon} className={styles["section-icon"]} alt="" loading="lazy"/>
                     <h3 className={styles["section-title"]}>{label}</h3>
                 </div>
 

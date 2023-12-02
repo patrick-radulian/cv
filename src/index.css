@@ -4,15 +4,14 @@
     --tertiary: #404040;
     --shadow: #40404090;
 
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 2rem;
+    padding-inline: 2rem;
     text-align: center;
-    background-image: url(../src/images/background/Mountain-Original.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(217deg, rgb(28 28 30), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgb(19 35 37), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgb(1 70 103), rgba(0, 0, 255, 0) 70.71%);
     background-attachment: fixed;
-    background-size: cover;
 }
 
 html,
@@ -62,17 +61,46 @@ p,
     display: inline;
 }
 
-li {
-    line-height: 1.075;
-    margin-block: 0.5rem;
+ul {
+    padding: 0;
+    list-style-type: none;
 }
-li::marker {
+
+li {
+    display: flex;
+    align-items: start;
+    text-align: justify;
+    line-height: 1.075;
+    margin-block: 0.25rem;
+    padding: 0;
+}
+
+.bullet {
+    display: inline-block;
+    width: 15px;
     font-size: 1.25rem;
+    line-height: 1.1rem;
     color: var(--secondary);
+    text-align: center;
+    margin-right: 0.5ch;
+}
+
+.bullet-value {
+    flex: 1;
 }
 
 @media screen and (max-width: 800px) {
+    html,
+    body {
+        hyphens: auto;
+    }
+
     .mobile-p {
         display: block;
+    }
+
+    li {
+        line-height: 1.25;
+        margin-block: 0.75rem;
     }
 }
