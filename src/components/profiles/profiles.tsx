@@ -11,17 +11,17 @@ const Profiles: React.FC = () => {
 
             <div className={styles.profiles}>
                 <a href="https://github.com/patrick-radulian" target="_blank" className={styles.link}>
-                    <img src={GitHubIcon} width={80} height={80} loading="lazy" />
+                    <img src={GitHubIcon} width={80} height={80} alt="Github" loading="lazy" />
                     <p>GitHub Profile</p>
                 </a>
 
                 <a href="https://codepen.io/Tricon/pens/public" target="_blank" className={styles.link}>
-                    <img src={CodePenIcon} width={80} height={80} loading="lazy" />
+                    <img src={CodePenIcon} width={80} height={80} alt="Codepen" loading="lazy" />
                     <p>CodePen Profile</p>
                 </a>
 
                 <a href="/portfolio.html" className={styles.link}>
-                    <img src={PortfolioIcon} width={80} height={80} loading="lazy" />
+                    <img src={PortfolioIcon} width={80} height={80} alt="Portfolio" loading="lazy" />
                     <p>Portfolio</p>
                 </a>
             </div>
