@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 1.5rem;
+    gap: 2rem;
     position: relative;
 }
 
@@ -33,21 +33,31 @@
 }
 
 .skill-container {
+    flex: 1;
     position: relative;
     display: grid;
-    place-content: center;
+    grid-template-columns: minmax(70px, 120px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-.skill-container-a {
-    width: 60px;
+.skill-size-a {
+    grid-template-rows: 100px 30px;
 }
 
-.skill-container-b {
-    width: 50px;
+.skill-size-b {
+    grid-template-rows: 75px 30px;
+}
+
+.skill-size-c {
+    grid-template-rows: 50px 30px;
 }
 
 .skill {
     filter: saturate(0);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .skill:hover {

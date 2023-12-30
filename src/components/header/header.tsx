@@ -5,7 +5,7 @@ import Portrait from "src/images/Portrait.svg";
 const Header: React.FC = () => {
     return (
         <header className={styles.header}>
-            <img src={Portrait} className={styles.portrait} alt="Portrait" />
+            <img src={Portrait} className={styles.portrait} width="250" height="247" alt="Portrait" />
 
             <div className={styles.tags}>
                 <p className={styles.tag}>UI/UX Designer</p>

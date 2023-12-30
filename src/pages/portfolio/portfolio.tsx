@@ -47,7 +47,7 @@ const Portfolio: React.FC = () => {
 
     return (
         <React.Fragment>
-            <ResumeSection icon={PencilIcon} label="UI Sketches" className={styles.sketches}>
+            <ResumeSection icon={PencilIcon} backIcon={true} label="UI Sketches" className={styles.sketches}>
                 <div style={{ paddingBlock: "1rem" }}>
                     <PhotoAlbum
                         layout="rows"
