@@ -4,27 +4,23 @@
     --tertiary: #404040;
     --shadow: #40404090;
 
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-inline: 2rem;
-    text-align: center;
-    background: linear-gradient(217deg, rgb(28 28 30), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgb(19 35 37), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgb(1 70 103), rgba(0, 0, 255, 0) 70.71%);
+    background: radial-gradient(circle at 50% 0, rgb(36 20 20 / 80%), rgba(255, 0, 0, 0) 70.71%),
+        radial-gradient(circle at 6.7% 75%, rgb(19 23 31 / 80%), rgba(0, 0, 255, 0) 70.71%),
+        radial-gradient(circle at 93.3% 75%, rgb(15 21 23 / 60%), rgba(0, 255, 0, 0) 70.71%) #001223;
     background-attachment: fixed;
 }
 
 html,
 body {
-    color: var(--tertiary);
+    color: var(--primary);
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.32;
     overflow-x: hidden;
-    text-shadow: 0 1px rgb(255 255 255 / 70%);
+    text-shadow: 0 1px rgba(15, 0, 0, 0.7);
 }
 
 * {

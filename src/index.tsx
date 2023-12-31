@@ -3,8 +3,4 @@ import Root from "./pages/root/root";
 import Resume from "./pages/resume/resume";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-    <Root>
-        <Resume />
-    </Root>
-);
+ReactDOM.createRoot(document.getElementById("root")!).render(<Resume />);
