@@ -1,10 +1,5 @@
 import React from "react";
-import Header from "components/header/header";
-import About from "components/about/about";
-import WorkExperience from "components/work-experience/work-experience";
-import Education from "components/education/education";
-import Skills from "components/skills/skills";
-import Profiles from "components/profiles/profiles";
+import Portrait from "src/images/Portrait.png";
 import styles from "./resume.module.css";
 
 const Resume: React.FC = () => {
@@ -15,8 +10,14 @@ const Resume: React.FC = () => {
                 <div className={styles["box-content"]}>About</div>
             </div>
             <div className={`${styles.box} ${styles.portrait}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Portrait</div>
+                <div className={styles["portrait-background"]}>
+                    <div className={styles["box-bg"]}></div>
+                    <div className={styles["box-content"]}></div>
+                </div>
+
+                <div className={styles["portrait-image"]}>
+                    <img src={Portrait} alt="Portrait" />
+                </div>
             </div>
             <div className={`${styles.box} ${styles["fe-xp"]}`}>
                 <div className={styles["box-bg"]}></div>
