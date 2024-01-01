@@ -22,74 +22,8 @@
     grid-template-rows: repeat(6, var(--grid-column-width));
 }
 
-.box {
-    --offset-x: 4;
-    --offset-y: 3;
-
-    --circle-x: calc(
-        0px - var(--grid-column-width) * calc(var(--col-start) - 1) + calc(var(--grid-column-width) * var(--offset-x))
-    );
-    --circle-y: calc(
-        0px - var(--grid-column-width) * calc(var(--row-start) - 1) + calc(var(--grid-column-width) * var(--offset-y))
-    );
-
-    display: grid;
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
-    border-radius: 1rem;
-    margin: 0.5rem;
-
-    grid-column: var(--col-start) / var(--col-end);
-    grid-row: var(--row-start) / var(--row-end);
-
-    animation: moveOffsetX 15s ease infinite alternate, moveOffsetY 30s ease infinite alternate;
-}
-
-@keyframes moveOffsetX {
-    0% {
-        --offset-x: 0;
-    }
-    100% {
-        --offset-x: 8;
-    }
-}
-
-@keyframes moveOffsetY {
-    0% {
-        --offset-y: 2;
-    }
-    25% {
-        --offset-y: 4;
-    }
-    50% {
-        --offset-y: 0;
-    }
-    100% {
-        --offset-y: 6;
-    }
-}
-
-.box-bg {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background: linear-gradient(to bottom right, #00dcff, #00dcff 35%, #e600ff 50%, #ff005a 65%, #ff005a),
-        radial-gradient(circle at var(--circle-x) var(--circle-y), white, #000000aa calc(var(--grid-column-width) * 4));
-    background-blend-mode: overlay;
-}
-
-.box-content {
-    padding: 1.25rem;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background: linear-gradient(var(--gradient-degrees), var(--gradient-start), var(--gradient-end));
-    border-radius: 14px;
-    box-shadow: inset 0px 1px 2px #00000080;
-}
-
 .about {
+    composes: box from "../../components/box/box.module.css";
     --col-start: 1;
     --col-end: 5;
     --row-start: 1;
@@ -101,6 +35,7 @@
 }
 
 .portrait {
+    composes: box from "../../components/box/box.module.css";
     --col-start: 7;
     --col-end: 9;
     --row-start: 1;
@@ -141,6 +76,7 @@
 }
 
 .fe-xp {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 1;
     --col-end: 3;
     --row-start: 3;
@@ -152,6 +88,7 @@
 }
 
 .name {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 3;
     --col-end: 8;
     --row-start: 3;
@@ -163,6 +100,7 @@
 }
 
 .github {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 7;
     --col-end: 8;
     --row-start: 4;
@@ -174,6 +112,7 @@
 }
 
 .codepen {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 8;
     --col-end: 9;
     --row-start: 3;
@@ -185,6 +124,7 @@
 }
 
 .portfolio {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 8;
     --col-end: 9;
     --row-start: 4;
@@ -196,6 +136,7 @@
 }
 
 .experience {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 3;
     --col-end: 7;
     --row-start: 4;
@@ -207,6 +148,7 @@
 }
 
 .skills {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 1;
     --col-end: 6;
     --row-start: 6;
@@ -218,6 +160,7 @@
 }
 
 .ux-xp {
+    composes: box from "/src/components/box/box.module.css";
     --col-start: 7;
     --col-end: 9;
     --row-start: 5;

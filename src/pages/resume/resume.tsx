@@ -1,56 +1,53 @@
 import React from "react";
 import Portrait from "src/images/Portrait.png";
 import styles from "./resume.module.css";
+import Box from "components/box/box";
+import BoxContent from "components/box-content/box-content";
+import BoxBackground from "components/box-background/box-background";
+import FrontEndExperience from "components/front-end-experience/front-end-experience";
 
 const Resume: React.FC = () => {
     return (
         <div className={styles.grid}>
-            <div className={`${styles.box} ${styles.about}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>About</div>
-            </div>
-            <div className={`${styles.box} ${styles.portrait}`}>
+            <Box className={styles.about}>
+                <BoxContent>About</BoxContent>
+            </Box>
+            <Box className={styles.portrait} noBg>
                 <div className={styles["portrait-background"]}>
-                    <div className={styles["box-bg"]}></div>
-                    <div className={styles["box-content"]}></div>
+                    <BoxBackground />
+                    <BoxContent />
                 </div>
 
                 <div className={styles["portrait-image"]}>
                     <img src={Portrait} alt="Portrait" />
                 </div>
-            </div>
-            <div className={`${styles.box} ${styles["fe-xp"]}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>FE-XP</div>
-            </div>
-            <div className={`${styles.box} ${styles.name}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Name</div>
-            </div>
-            <div className={`${styles.box} ${styles.github}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Github</div>
-            </div>
-            <div className={`${styles.box} ${styles.codepen}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Codepen</div>
-            </div>
-            <div className={`${styles.box} ${styles.portfolio}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Portfolio</div>
-            </div>
-            <div className={`${styles.box} ${styles.experience}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Experience</div>
-            </div>
-            <div className={`${styles.box} ${styles.skills}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>Skills</div>
-            </div>
-            <div className={`${styles.box} ${styles["ux-xp"]}`}>
-                <div className={styles["box-bg"]}></div>
-                <div className={styles["box-content"]}>UX-XP</div>
-            </div>
+            </Box>
+            <Box className={styles["fe-xp"]}>
+                <BoxContent>
+                    <FrontEndExperience />
+                </BoxContent>
+            </Box>
+            <Box className={styles.name}>
+                <BoxContent>Patrick-Alexander Radulian</BoxContent>
+            </Box>
+            <Box className={styles.github}>
+                <BoxContent>GitHub</BoxContent>
+            </Box>
+            <Box className={styles.codepen}>
+                <BoxContent>Codepen</BoxContent>
+            </Box>
+            <Box className={styles.portfolio}>
+                <BoxContent>Portfolio</BoxContent>
+            </Box>
+            <Box className={styles.experience}>
+                <BoxContent>Experience</BoxContent>
+            </Box>
+            <Box className={styles.skills}>
+                <BoxContent>Skills</BoxContent>
+            </Box>
+            <Box className={styles["ux-xp"]}>
+                <BoxContent>UX-XP</BoxContent>
+            </Box>
         </div>
     );
 };

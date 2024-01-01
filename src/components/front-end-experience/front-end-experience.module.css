@@ -1,0 +1,31 @@
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1ch;
+}
+
+.number {
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    margin: 0;
+    background: linear-gradient(-45deg, #ff005a 30%, #00dcff 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.years {
+    display: grid;
+    place-content: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.engineering {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
