@@ -5,6 +5,7 @@ import Box from "components/box/box";
 import BoxContent from "components/box-content/box-content";
 import BoxBackground from "components/box-background/box-background";
 import FrontEndExperience from "components/front-end-experience/front-end-experience";
+import UXExperience from "components/ux-experience/ux-experience";
 
 const Resume: React.FC = () => {
     return (
@@ -46,7 +47,9 @@ const Resume: React.FC = () => {
                 <BoxContent>Skills</BoxContent>
             </Box>
             <Box className={styles["ux-xp"]}>
-                <BoxContent>UX-XP</BoxContent>
+                <BoxContent>
+                    <UXExperience />
+                </BoxContent>
             </Box>
         </div>
     );

@@ -1,21 +1,21 @@
 import React from "react";
-import styles from "./front-end-experience.module.css";
+import styles from "./ux-experience.module.css";
 
-const FrontEndExperience: React.FC = () => {
+const UXExperience: React.FC = () => {
     return (
         <React.Fragment>
             <div className={styles.experience}>
-                <h1 className={styles.number}>12</h1>
+                <h1 className={styles.number}>3</h1>
                 <span className={styles.years}>yr</span>
             </div>
 
             <p className={styles.engineering}>
-                Front-end
+                UX
                 <br />
-                Engineering
+                Design
             </p>
         </React.Fragment>
     );
 };
 
-export default FrontEndExperience;
+export default UXExperience;
