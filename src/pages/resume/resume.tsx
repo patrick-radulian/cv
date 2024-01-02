@@ -42,17 +42,17 @@ const Resume: React.FC = () => {
             </Box>
             <Box className={styles.github}>
                 <BoxContent padding="0.75rem">
-                    <ImageLink src={GitHubIcon} label="GitHub" />
+                    <ImageLink src={GitHubIcon} href="https://github.com/patrick-radulian" label="GitHub" />
                 </BoxContent>
             </Box>
             <Box className={styles.codepen}>
                 <BoxContent padding="0.75rem">
-                    <ImageLink src={CodePenIcon} label="Codepen" />
+                    <ImageLink src={CodePenIcon} href="https://codepen.io/Tricon/pens/public" label="Codepen" />
                 </BoxContent>
             </Box>
             <Box className={styles.portfolio}>
                 <BoxContent padding="0.75rem">
-                    <ImageLink src={PortfolioIcon} label="Portfolio" />
+                    <ImageLink src={PortfolioIcon} href="/portfolio.html" label="Portfolio" />
                 </BoxContent>
             </Box>
             <Box className={styles.experience}>
