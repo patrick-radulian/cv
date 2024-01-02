@@ -18,6 +18,7 @@ import Experience from "components/experience/experience";
 import About from "components/about/about";
 import Skills from "components/skills/skills";
 import Tools from "components/tools/tools";
+import Web from "components/web/web";
 
 const Resume: React.FC = () => {
     return (
@@ -80,6 +81,11 @@ const Resume: React.FC = () => {
             <Box className={styles["ux-xp"]}>
                 <BoxContent>
                     <UXExperience />
+                </BoxContent>
+            </Box>
+            <Box className={styles.web}>
+                <BoxContent>
+                    <Web />
                 </BoxContent>
             </Box>
             <Box className={styles.tools}>
