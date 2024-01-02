@@ -145,6 +145,28 @@
     --gradient-degrees: 180deg;
     --gradient-start: #12151d;
     --gradient-end: #0a131e;
+
+    display: grid;
+    grid-template-columns: [image-start] calc(var(--grid-column-width) / 2) [background-start] auto [image-end background-end];
+    grid-template-rows:
+        [background-start]
+        calc(var(--grid-column-width) / 2)
+        [image-start]
+        auto
+        [ background-end];
+}
+
+.experience-image {
+    grid-area: image;
+    width: 8rem;
+    aspect-ratio: 1;
+}
+
+.experience-background {
+    grid-area: background;
+    display: grid;
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
 }
 
 .skills {

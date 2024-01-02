@@ -10,9 +10,11 @@ import Name from "components/name/name";
 import ImageLink from "components/image-link/image-link";
 
 import Portrait from "src/images/Portrait.png";
+import Bag from "src/images/Bag-Stylized.png";
 import GitHubIcon from "src/images/profiles/GitHub.png";
 import CodePenIcon from "src/images/profiles/Codepen.png";
 import PortfolioIcon from "src/images/profiles/Portfolio.png";
+import Experience from "components/experience/experience";
 
 const Resume: React.FC = () => {
     return (
@@ -55,8 +57,15 @@ const Resume: React.FC = () => {
                     <ImageLink src={PortfolioIcon} href="/portfolio.html" label="Portfolio" />
                 </BoxContent>
             </Box>
-            <Box className={styles.experience}>
-                <BoxContent>Experience</BoxContent>
+            <Box className={styles.experience} noBg>
+                <div className={styles["experience-background"]}>
+                    <BoxBackground />
+                    <BoxContent>
+                        <Experience />
+                    </BoxContent>
+                </div>
+
+                <img src={Bag} className={styles["experience-image"]} alt="Bag" />
             </Box>
             <Box className={styles.skills}>
                 <BoxContent>Skills</BoxContent>
