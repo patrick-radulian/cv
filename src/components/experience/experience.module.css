@@ -1,0 +1,14 @@
+.shape {
+    width: 3rem;
+    height: 5rem;
+    float: left;
+    margin-left: -1.25rem;
+    margin-top: -1.25rem;
+    border-bottom-right-radius: 100%;
+    shape-outside: border-box;
+}
+
+.title {
+    margin: 0;
+}
+

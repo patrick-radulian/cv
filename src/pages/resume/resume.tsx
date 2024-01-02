@@ -10,17 +10,20 @@ import Name from "components/name/name";
 import ImageLink from "components/image-link/image-link";
 
 import Portrait from "src/images/Portrait.png";
-import Bag from "src/images/Bag-Stylized.png";
+import Bulb from "src/images/Bulb.png";
 import GitHubIcon from "src/images/profiles/GitHub.png";
 import CodePenIcon from "src/images/profiles/Codepen.png";
 import PortfolioIcon from "src/images/profiles/Portfolio.png";
 import Experience from "components/experience/experience";
+import About from "components/about/about";
 
 const Resume: React.FC = () => {
     return (
         <div className={styles.grid}>
             <Box className={styles.about}>
-                <BoxContent>About</BoxContent>
+                <BoxContent>
+                    <About/>
+                </BoxContent>
             </Box>
             <Box className={styles.portrait} noBg>
                 <div className={styles["portrait-background"]}>
@@ -65,7 +68,7 @@ const Resume: React.FC = () => {
                     </BoxContent>
                 </div>
 
-                <img src={Bag} className={styles["experience-image"]} alt="Bag" />
+                <img src={Bulb} className={styles["experience-image"]} alt="Bag" />
             </Box>
             <Box className={styles.skills}>
                 <BoxContent>Skills</BoxContent>

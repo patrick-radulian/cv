@@ -1,0 +1,13 @@
+.title {
+    margin: 0;
+}
+
+.content {
+    margin: 0.5rem 0 0;
+    line-height: 1.42rem;
+}
+
+.content em {
+    font-weight: 400;
+    color: var(--secondary);
+}

@@ -1,55 +1,21 @@
 import React from "react";
-import ResumeSection from "../resume-section/resume-section";
-import AboutIcon from "src/images/sections/About-Icon.svg";
-import Triangles from "../triangles/triangles";
+import styles from "./about.module.css";
 
 const About: React.FC = () => {
     return (
-        <ResumeSection icon={AboutIcon} label="About">
-            <h4 className="justify">
-                <Triangles />
-                Creative UI/UX Designer with an extraordinary technical foundation.
-            </h4>
-
-            <div className="justify p">
-                <ul>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">Self-taught and inquisitive UI/UX designer and UI engineer</span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">
-                            12 years of experience in the field of front-end engineering
-                        </span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">8 years of experience building for enterprise applications</span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">3 years of experience in the field of UI/UX design</span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">
-                            Strong visual intelligence, empathy, analytical approach and communication skills
-                        </span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">
-                            Special ability to combine design and technology perspectives
-                        </span>
-                    </li>
-                    <li>
-                        <span className="bullet">•</span>
-                        <span className="bullet-value">Passion for outstanding user experience</span>
-                    </li>
-                </ul>
-            </div>
-        </ResumeSection>
+        <React.Fragment>
+            <h1 className={styles.title}>About</h1>
+            <p className={styles.content}>
+                I am a UI/UX designer with an <em>extraordinary technical foundation</em>, counting over 12 years of
+                front-end engineering experience - 8 of them working on <em>enterprise level applications</em> - and 3
+                years of UI/UX design experience.
+            </p>
+            <p className={styles.content}>
+                My defining traits are <em>strong visual intelligence</em>, highly developed empathy, a very analytical
+                approach, <em>excellent communication skills</em>, and a special ability to combine design and
+                technology perspectives.
+            </p>
+        </React.Fragment>
     );
 };
 

@@ -25,7 +25,7 @@
 .about {
     composes: box from "../../components/box/box.module.css";
     --col-start: 1;
-    --col-end: 5;
+    --col-end: 6;
     --row-start: 1;
     --row-end: 3;
 
@@ -149,9 +149,9 @@
     display: grid;
     grid-template-columns: [image-start] calc(var(--grid-column-width) / 2) [background-start] auto [image-end background-end];
     grid-template-rows:
-        [background-start]
+        [image-start background-start]
         calc(var(--grid-column-width) / 2)
-        [image-start]
+        [image-end]
         auto
         [ background-end];
 }
@@ -160,6 +160,7 @@
     grid-area: image;
     width: 8rem;
     aspect-ratio: 1;
+    margin-top: -3rem;
 }
 
 .experience-background {
