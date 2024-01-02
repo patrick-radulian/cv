@@ -8,22 +8,22 @@ import TS from "src/images/skills/TS.svg";
 const Web: React.FC = () => {
     return (
         <div className={styles["web-skills"]}>
-            <div className={styles["web-skill"]}>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" className={styles["web-skill"]} target="_blank">
                 <img src={HTML} alt="" loading="lazy" />
                 <span className={styles.label}>HTML</span>
-            </div>
-            <div className={styles["web-skill"]}>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" className={styles["web-skill"]} target="_blank">
                 <img src={CSS} alt="" loading="lazy" />
                 <span className={styles.label}>CSS</span>
-            </div>
-            <div className={styles["web-skill"]}>
+            </a>
+            <a href="https://react.dev/" className={styles["web-skill"]} target="_blank">
                 <img src={REACT} alt="" loading="lazy" />
                 <span className={styles.label}>React</span>
-            </div>
-            <div className={styles["web-skill"]}>
+            </a>
+            <a href="https://www.typescriptlang.org/" className={styles["web-skill"]} target="_blank">
                 <img src={TS} alt="" loading="lazy" />
                 <span className={styles.label}>TypeScript</span>
-            </div>
+            </a>
         </div>
     );
 };
