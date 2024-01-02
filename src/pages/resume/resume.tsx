@@ -16,13 +16,15 @@ import CodePenIcon from "src/images/profiles/Codepen.png";
 import PortfolioIcon from "src/images/profiles/Portfolio.png";
 import Experience from "components/experience/experience";
 import About from "components/about/about";
+import Skills from "components/skills/skills";
+import Tools from "components/tools/tools";
 
 const Resume: React.FC = () => {
     return (
         <div className={styles.grid}>
             <Box className={styles.about}>
                 <BoxContent>
-                    <About/>
+                    <About />
                 </BoxContent>
             </Box>
             <Box className={styles.portrait} noBg>
@@ -71,11 +73,18 @@ const Resume: React.FC = () => {
                 <img src={Bulb} className={styles["experience-image"]} alt="Bag" />
             </Box>
             <Box className={styles.skills}>
-                <BoxContent>Skills</BoxContent>
+                <BoxContent>
+                    <Skills />
+                </BoxContent>
             </Box>
             <Box className={styles["ux-xp"]}>
                 <BoxContent>
                     <UXExperience />
+                </BoxContent>
+            </Box>
+            <Box className={styles.tools}>
+                <BoxContent>
+                    <Tools />
                 </BoxContent>
             </Box>
         </div>

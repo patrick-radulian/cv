@@ -1,10 +1,10 @@
-.skills {
+.tools {
     display: grid;
     grid-template-rows: 68px;
     grid-template-columns: repeat(6, 1fr);
 }
 
-.skill {
+.tool {
     display: grid;
     grid-template-rows: minmax(0, auto) auto;
     grid-template-columns: auto;
@@ -12,7 +12,7 @@
     gap: 0.25rem;
 }
 
-.skill img {
+.tool img {
     max-height: 100%;
     aspect-ratio: 1;
     filter: invert(1) grayscale(1) brightness(2);
