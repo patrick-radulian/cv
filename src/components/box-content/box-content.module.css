@@ -4,5 +4,4 @@
     grid-row: 2 / 3;
     background: linear-gradient(var(--gradient-degrees), var(--gradient-start), var(--gradient-end));
     border-radius: 14px;
-    box-shadow: inset 0px 1px 2px #00000080;
 }

@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+.name {
+    background: linear-gradient(to bottom right, #00dcff, #00dcff 25%, #e600ff 50%, #ff005a 75%, #ff005a);
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    font-size: 3rem;
+    text-align: end;
+    line-height: 1;
+}

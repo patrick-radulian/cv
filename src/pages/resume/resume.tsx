@@ -6,6 +6,7 @@ import BoxContent from "components/box-content/box-content";
 import BoxBackground from "components/box-background/box-background";
 import FrontEndExperience from "components/front-end-experience/front-end-experience";
 import UXExperience from "components/ux-experience/ux-experience";
+import Name from "components/name/name";
 
 const Resume: React.FC = () => {
     return (
@@ -29,7 +30,9 @@ const Resume: React.FC = () => {
                 </BoxContent>
             </Box>
             <Box className={styles.name}>
-                <BoxContent>Patrick-Alexander Radulian</BoxContent>
+                <BoxContent>
+                    <Name />
+                </BoxContent>
             </Box>
             <Box className={styles.github}>
                 <BoxContent>GitHub</BoxContent>
