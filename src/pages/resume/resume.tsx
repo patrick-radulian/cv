@@ -22,7 +22,7 @@ import Web from "components/web/web";
 
 const Resume: React.FC = () => {
     return (
-        <div className={styles.grid}>
+        <React.Fragment>
             <Box className={styles.about}>
                 <BoxContent>
                     <About />
@@ -111,7 +111,7 @@ const Resume: React.FC = () => {
                     <Tools />
                 </BoxContent>
             </Box>
-        </div>
+        </React.Fragment>
     );
 };
 

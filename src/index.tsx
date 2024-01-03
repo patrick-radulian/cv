@@ -1,17 +1,20 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
+import Grid from "components/grid/grid";
 import Resume from "./pages/resume/resume";
-import "./index.css";
 import NewPortfolio from "./pages/new-portfolio/new-portfolio";
+
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
 root.render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
-            <Route path="/" element={<Resume />} />
-            <Route path="/portfolio" element={<NewPortfolio />} />
+            <Route path="/" element={<Grid />}>
+                <Route path="/" element={<Resume />} />
+                <Route path="/portfolio" element={<NewPortfolio />} />
+            </Route>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );

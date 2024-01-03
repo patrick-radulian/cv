@@ -1,0 +1,58 @@
+.box {
+    --offset-x: 4;
+    --offset-y: 3;
+
+    --circle-x: calc(
+        0px - var(--grid-column-width) * calc(var(--col-start) - 1) + calc(var(--grid-column-width) * var(--offset-x))
+    );
+    --circle-y: calc(
+        0px - var(--grid-column-width) * calc(var(--row-start) - 1) + calc(var(--grid-column-width) * var(--offset-y))
+    );
+
+    display: grid;
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+
+    grid-column: var(--col-start) / var(--col-end);
+    grid-row: var(--row-start) / var(--row-end);
+
+    animation: moveOffsetX 15s ease infinite alternate, moveOffsetY 30s ease infinite alternate;
+}
+
+.disclaimer {
+    composes: box;
+    --col-start: 1;
+    --col-end: 9;
+    --row-start: 1;
+    --row-end: 2;
+
+    text-align: center;
+
+    --gradient-degrees: 80deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #181318;
+}
+
+.disclaimer h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.disclaimer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.new-portfolio {
+    composes: box;
+    --col-start: 1;
+    --col-end: 9;
+    --row-start: 2;
+    --row-end: 8;
+
+    --gradient-degrees: 80deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #181318;
+}

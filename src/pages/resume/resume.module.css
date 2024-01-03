@@ -1,14 +1,3 @@
-@property --offset-x {
-    syntax: "<number>";
-    inherits: false;
-    initial-value: 4;
-}
-@property --offset-y {
-    syntax: "<number>";
-    inherits: false;
-    initial-value: 3;
-}
-
 .grid {
     --grid-column-width: 8rem;
     --grid-columns: 8;
