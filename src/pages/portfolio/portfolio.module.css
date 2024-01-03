@@ -21,7 +21,7 @@
     animation: moveOffsetX 15s ease infinite alternate, moveOffsetY 30s ease infinite alternate;
 }
 
-.disclaimer {
+.disclaimer-top {
     composes: box;
     --col-start: 1;
     --col-end: 9;
@@ -35,12 +35,12 @@
     --gradient-end: #181318;
 }
 
-.disclaimer h1 {
+.disclaimer-top h1 {
     margin: 0;
     padding: 0;
 }
 
-.disclaimer h4 {
+.disclaimer-top h4 {
     margin: 0;
     padding: 0;
 }
@@ -55,4 +55,16 @@
     --gradient-degrees: 80deg;
     --gradient-start: #0e141f;
     --gradient-end: #181318;
+}
+
+.disclaimer-bottom {
+    composes: box;
+    --col-start: 1;
+    --col-end: 4;
+    --row-start: 8;
+    --row-end: 9;
+
+    --gradient-degrees: 45deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
 }

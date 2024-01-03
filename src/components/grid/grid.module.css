@@ -9,4 +9,6 @@
     display: grid;
     grid-template-columns: repeat(var(--grid-columns), var(--grid-column-width));
     grid-template-rows: repeat(var(--grid-rows), var(--grid-column-width));
+
+    grid-auto-rows: 4rem;
 }

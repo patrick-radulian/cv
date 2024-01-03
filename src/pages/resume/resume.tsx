@@ -111,6 +111,11 @@ const Resume: React.FC = () => {
                     <Tools />
                 </BoxContent>
             </Box>
+            <Box className={styles.disclaimer}>
+                <BoxContent padding="0.75rem 1.25rem">
+                    <p style={{ margin: 0 }}>Mobile version: work in progress</p>
+                </BoxContent>
+            </Box>
         </React.Fragment>
     );
 };
