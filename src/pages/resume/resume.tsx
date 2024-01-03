@@ -51,21 +51,31 @@ const Resume: React.FC = () => {
             <Box className={styles.github}>
                 <BoxContent>
                     <div className={styles["github-image"]}>
-                        <ImageLink src={GitHubIcon} href="https://github.com/patrick-radulian" label="GitHub" />
+                        <ImageLink
+                            src={GitHubIcon}
+                            to="https://github.com/patrick-radulian"
+                            target="_blank"
+                            label="GitHub"
+                        />
                     </div>
                 </BoxContent>
             </Box>
             <Box className={styles.codepen}>
                 <BoxContent>
                     <div className={styles["codepen-image"]}>
-                        <ImageLink src={CodePenIcon} href="https://codepen.io/Tricon/pens/public" label="Codepen" />
+                        <ImageLink
+                            src={CodePenIcon}
+                            to="https://codepen.io/Tricon/pens/public"
+                            target="_blank"
+                            label="Codepen"
+                        />
                     </div>
                 </BoxContent>
             </Box>
             <Box className={styles.portfolio}>
                 <BoxContent>
                     <div className={styles["portfolio-image"]}>
-                        <ImageLink src={PortfolioIcon} href="/portfolio.html" label="Portfolio" />
+                        <ImageLink src={PortfolioIcon} to="/portfolio" label="Portfolio" />
                     </div>
                 </BoxContent>
             </Box>
