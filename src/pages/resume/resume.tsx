@@ -11,9 +11,9 @@ import ImageLink from "components/image-link/image-link";
 
 import Portrait from "src/images/Portrait.png";
 import Bulb from "src/images/Bulb.png";
-import GitHubIcon from "src/images/profiles/GitHub.png";
-import CodePenIcon from "src/images/profiles/Codepen.png";
-import PortfolioIcon from "src/images/profiles/Portfolio.png";
+import GitHubIcon from "src/images/icons/GitHub.svg";
+import CodePenIcon from "src/images/icons/Codepen.svg";
+import PortfolioIcon from "src/images/icons/Portfolio.svg";
 import Experience from "components/experience/experience";
 import About from "components/about/about";
 import Skills from "components/skills/skills";
@@ -49,18 +49,24 @@ const Resume: React.FC = () => {
                 </BoxContent>
             </Box>
             <Box className={styles.github}>
-                <BoxContent padding="0.75rem">
-                    <ImageLink src={GitHubIcon} href="https://github.com/patrick-radulian" label="GitHub" />
+                <BoxContent>
+                    <div className={styles["github-image"]}>
+                        <ImageLink src={GitHubIcon} href="https://github.com/patrick-radulian" label="GitHub" />
+                    </div>
                 </BoxContent>
             </Box>
             <Box className={styles.codepen}>
-                <BoxContent padding="0.75rem">
-                    <ImageLink src={CodePenIcon} href="https://codepen.io/Tricon/pens/public" label="Codepen" />
+                <BoxContent>
+                    <div className={styles["codepen-image"]}>
+                        <ImageLink src={CodePenIcon} href="https://codepen.io/Tricon/pens/public" label="Codepen" />
+                    </div>
                 </BoxContent>
             </Box>
             <Box className={styles.portfolio}>
-                <BoxContent padding="0.75rem">
-                    <ImageLink src={PortfolioIcon} href="/portfolio.html" label="Portfolio" />
+                <BoxContent>
+                    <div className={styles["portfolio-image"]}>
+                        <ImageLink src={PortfolioIcon} href="/portfolio.html" label="Portfolio" />
+                    </div>
                 </BoxContent>
             </Box>
             <Box className={styles.experience} noBg>

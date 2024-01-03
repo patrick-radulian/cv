@@ -10,8 +10,10 @@ type ImageLinkProps = {
 const ImageLink: React.FC<ImageLinkProps> = (props: ImageLinkProps) => {
     return (
         <a href={props.href} target="_blank" className={styles.container}>
-            <img className={styles.img} src={props.src} alt={props.label} />
-            {props.label && <div className={styles.label}>{props.label}</div>}
+            <div className={styles["image-mask"]} style={{['--mask-src' as string]: `url(${props.src})`}}>
+                <img src={props.src} alt={props.label} loading="lazy" />
+            </div>
+            {props.label && <span className={styles.label}>{props.label}</span>}
         </a>
     );
 };

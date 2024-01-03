@@ -1,22 +1,32 @@
 .container {
     display: grid;
-    grid-template-rows: 64px auto;
-    justify-content: center;
-    gap: 0.25rem;
-    width: 100%;
-    height: 100%;
-    color: var(--primary);
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 0.5rem;
 }
 
-.img {
-    max-width: 100%;
+.image-mask {
+    display: flex;
+    background: linear-gradient(to bottom right, white 8rem, #00dcff 8rem, #00dcff 12rem, #e600ff 14rem, #ff005a 16rem);
+    mask-image: var(--mask-src);
+    background-size: 16rem 16rem;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    transition: background-position 0.15s linear;
+}
+
+.container:hover .image-mask {
+    background-position: -8rem -8rem;
+}
+
+.container img {
     max-height: 100%;
+    aspect-ratio: 1;
+    opacity: 0;
 }
 
 .label {
     font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1rem;
-    text-align: center;
-    color: var(--color-text-secondary);
+    color: var(--primary);
 }

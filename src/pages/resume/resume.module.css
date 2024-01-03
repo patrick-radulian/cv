@@ -63,7 +63,7 @@
 }
 
 .portrait-image img {
-    width: 90%;
+    width: 100%;
     aspect-ratio: 1;
     margin-bottom: 2px;
 }
@@ -111,6 +111,12 @@
     --gradient-end: #0e141e;
 }
 
+.github-image {
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 1fr;
+}
+
 .codepen {
     composes: box from "/src/components/box/box.module.css";
     --col-start: 8;
@@ -123,6 +129,12 @@
     --gradient-end: #0a131e;
 }
 
+.codepen-image {
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 1fr;
+}
+
 .portfolio {
     composes: box from "/src/components/box/box.module.css";
     --col-start: 8;
@@ -133,6 +145,12 @@
     --gradient-degrees: 135deg;
     --gradient-start: #0b131d;
     --gradient-end: #09131e;
+}
+
+.portfolio-image {
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 1fr;
 }
 
 .experience {
