@@ -10,11 +10,11 @@ import ImageLink from "components/image-link/image-link";
 const Tools: React.FC = () => {
     return (
         <div className={styles.tools}>
-            <ImageLink src={FIGMA} href="https://www.figma.com/" label="Figma" />
-            <ImageLink src={PROTOIO} href="https://proto.io/" label="Proto.io" />
-            <ImageLink src={ADOBECS} href="https://www.adobe.com/creativecloud.html" label="AdobeCS" />
-            <ImageLink src={AFFINITY} href="https://affinity.serif.com/" label="Affinity" />
-            <ImageLink src={UNREAL} href="https://www.unrealengine.com/" label="Unreal Engine" />
+            <ImageLink src={FIGMA} to="https://www.figma.com/" target="_blank" label="Figma" />
+            <ImageLink src={PROTOIO} to="https://proto.io/" target="_blank" label="Proto.io" />
+            <ImageLink src={ADOBECS} to="https://www.adobe.com/creativecloud.html" target="_blank" label="AdobeCS" />
+            <ImageLink src={AFFINITY} to="https://affinity.serif.com/" target="_blank" label="Affinity" />
+            <ImageLink src={UNREAL} to="https://www.unrealengine.com/" target="_blank" label="Unreal Engine" />
         </div>
     );
 };

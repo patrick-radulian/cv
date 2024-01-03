@@ -9,10 +9,10 @@ import ImageLink from "components/image-link/image-link";
 const Web: React.FC = () => {
     return (
         <div className={styles["web-skills"]}>
-            <ImageLink src={HTML} href="https://developer.mozilla.org/en-US/docs/Web/HTML" label="HTML" />
-            <ImageLink src={CSS} href="https://developer.mozilla.org/en-US/docs/Web/CSS" label="CSS" />
-            <ImageLink src={REACT} href="https://react.dev/" label="React" />
-            <ImageLink src={TS} href="https://www.typescriptlang.org/" label="TypeScript" />
+            <ImageLink src={HTML} to="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" label="HTML" />
+            <ImageLink src={CSS} to="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" label="CSS" />
+            <ImageLink src={REACT} to="https://react.dev/" target="_blank" label="React" />
+            <ImageLink src={TS} to="https://www.typescriptlang.org/" target="_blank" label="TypeScript" />
         </div>
     );
 };
