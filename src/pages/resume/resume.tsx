@@ -73,7 +73,9 @@ const Resume: React.FC = () => {
                 <div className={styles["experience-background"]}>
                     <BoxBackground />
                     <BoxContent>
-                        <Experience />
+                        <div className={styles["experience-container"]}>
+                            <Experience />
+                        </div>
                     </BoxContent>
                 </div>
 

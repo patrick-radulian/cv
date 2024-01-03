@@ -153,6 +153,13 @@
     grid-template-columns: 1fr;
 }
 
+.experience-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [timeline-start] 0.75rem [title-start] auto [timeline-end title-end];
+    grid-template-rows: [title-start] min-content [title-end timeline-start] 1fr [timeline-end];
+}
+
 .experience {
     composes: box from "/src/components/box/box.module.css";
     --col-start: 3;
