@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 1rem;
     grid-template-rows: 1fr 1rem 15px 2px 15px 1rem 1fr;
+    margin-left: -1.25rem;
     font-size: 0.7rem;
 }
 
