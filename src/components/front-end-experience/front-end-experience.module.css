@@ -1,3 +1,15 @@
+.fe-xp {
+    composes: box from global;
+    --col-start: 1;
+    --col-end: 3;
+    --row-start: 3;
+    --row-end: 5;
+
+    --gradient-degrees: 90deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #12161d;
+}
+
 .experience {
     display: grid;
     justify-content: center;

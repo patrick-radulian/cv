@@ -1,10 +1,22 @@
+.name {
+    composes: box from global;
+    --col-start: 3;
+    --col-end: 8;
+    --row-start: 3;
+    --row-end: 4;
+
+    --gradient-degrees: 180deg;
+    --gradient-start: #16151c;
+    --gradient-end: #12151d;
+}
+
 .container {
     display: grid;
     align-items: center;
     height: 100%;
 }
 
-.name {
+.text {
     background: linear-gradient(to bottom right, #00dcff, #00dcff 25%, #e600ff 50%, #ff005a 75%, #ff005a);
     background-clip: text;
     color: transparent;

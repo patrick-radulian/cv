@@ -1,6 +1,10 @@
 import React from "react";
 import _ from "lodash";
 import styles from "./experience.module.css";
+import Box from "components/box/box";
+import BoxBackground from "components/box-background/box-background";
+import BoxContent from "components/box-content/box-content";
+import Bulb from "src/images/Bulb.png";
 
 const Experience: React.FC = () => {
     const roles: Array<Array<string>> = [
@@ -14,8 +18,12 @@ const Experience: React.FC = () => {
     const durations: Array<string> = ["1yr", "6m", "7yr", "3m", "1yr"];
 
     return (
-        <React.Fragment>
-            <h1 className={styles.title}>Experience</h1>
+        <Box className={styles.experience} noBg>
+            <div className={styles["experience-background"]}>
+                <BoxBackground />
+                <BoxContent>
+                    <div className={styles["experience-container"]}>
+                    <h1 className={styles.title}>Work Experience</h1>
             <div className={styles.timeline}>
                 {roles.map((segment, i) => (
                     <div className={styles.role} style={{ ["--n" as string]: i + 1 }}>
@@ -38,7 +46,12 @@ const Experience: React.FC = () => {
                 ))}
                 <div className={styles.arrow} />
             </div>
-        </React.Fragment>
+                    </div>
+                </BoxContent>
+            </div>
+
+            <img src={Bulb} className={styles["experience-image"]} alt="Bag" />
+        </Box>
     );
 };
 

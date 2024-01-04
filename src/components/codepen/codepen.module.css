@@ -1,0 +1,17 @@
+.codepen {
+    composes: box from global;
+    --col-start: 8;
+    --col-end: 9;
+    --row-start: 3;
+    --row-end: 4;
+
+    --gradient-degrees: 135deg;
+    --gradient-start: #0f131c;
+    --gradient-end: #0a131e;
+}
+
+.codepen-image {
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 1fr;
+}

@@ -1,13 +1,5 @@
-@property --offset-x {
-    syntax: "<number>";
-    inherits: false;
-    initial-value: 4;
-}
-@property --offset-y {
-    syntax: "<number>";
-    inherits: false;
-    initial-value: 3;
-}
+@import "./box.css";
+@import "./properties.css";
 
 :root {
     --primary: #e0e0e0;
@@ -55,64 +47,6 @@ a[href="#/"] {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-.justify {
-    text-align: justify;
-}
-
-p,
-.p {
-    margin-block: 1rem;
-}
-
-.mobile-p {
-    display: inline;
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    display: flex;
-    align-items: start;
-    text-align: justify;
-    line-height: 1.075;
-    margin-block: 0.25rem;
-    padding: 0;
-}
-
-.bullet {
-    display: inline-block;
-    width: 15px;
-    font-size: 1.25rem;
-    line-height: 1.1rem;
-    color: var(--secondary);
-    text-align: center;
-    margin-right: 0.5ch;
-}
-
-.bullet-value {
-    flex: 1;
-}
-
-@media screen and (max-width: 800px) {
-    html,
-    body {
-        hyphens: auto;
-    }
-
-    .mobile-p {
-        display: block;
-    }
-
-    li {
-        line-height: 1.25;
-        margin-block: 0.75rem;
-    }
+p {
+    margin: 0;
 }

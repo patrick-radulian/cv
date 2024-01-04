@@ -1,4 +1,16 @@
 .tools {
+    composes: box from global;
+    --col-start: 5;
+    --col-end: 9;
+    --row-start: 7;
+    --row-end: 8;
+
+    --gradient-degrees: 135deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
+}
+
+.tools-list {
     display: grid;
     grid-template-rows: 68px;
     grid-template-columns: repeat(5, 1fr);

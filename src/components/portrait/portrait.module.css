@@ -1,0 +1,42 @@
+.portrait {
+    composes: box from global;
+    --col-start: 7;
+    --col-end: 9;
+    --row-start: 1;
+    --row-end: 3;
+
+    --gradient-degrees: 270deg;
+    --gradient-start: #0c141e;
+    --gradient-end: #15131b;
+}
+
+.portrait:global(.box) {
+    display: grid;
+    grid-template-columns: [image-start background-start] auto [image-end background-end];
+    grid-template-rows:
+        [image-start]
+        6rem
+        [background-start]
+        auto
+        [image-end background-end];
+}
+
+.portrait-image {
+    grid-area: image;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.portrait-image img {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 2px;
+}
+
+.portrait-background {
+    grid-area: background;
+    display: grid;
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
+}

@@ -1,0 +1,11 @@
+.disclaimer {
+    composes: box from global;
+    --col-start: 1;
+    --col-end: 4;
+    --row-start: 8;
+    --row-end: 9;
+
+    --gradient-degrees: 45deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
+}

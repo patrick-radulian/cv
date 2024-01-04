@@ -10,13 +10,14 @@
     );
 
     display: grid;
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
     border-radius: 1rem;
     margin: 0.5rem;
 
     grid-column: var(--col-start) / var(--col-end);
     grid-row: var(--row-start) / var(--row-end);
+
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
 
     animation: moveOffsetX 15s ease infinite alternate, moveOffsetY 30s ease infinite alternate;
 }

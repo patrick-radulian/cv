@@ -1,0 +1,17 @@
+.github {
+    composes: box from global;
+    --col-start: 7;
+    --col-end: 8;
+    --row-start: 4;
+    --row-end: 5;
+
+    --gradient-degrees: 135deg;
+    --gradient-start: #0e131a;
+    --gradient-end: #0e141e;
+}
+
+.github-image {
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 1fr;
+}

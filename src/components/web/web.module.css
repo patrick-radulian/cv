@@ -1,3 +1,15 @@
+.web {
+    composes: box from global;
+    --col-start: 1;
+    --col-end: 5;
+    --row-start: 7;
+    --row-end: 8;
+
+    --gradient-degrees: 135deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
+}
+
 .web-skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

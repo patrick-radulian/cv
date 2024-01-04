@@ -1,3 +1,31 @@
+.about {
+    composes: box from global;
+    --col-start: 1;
+    --col-end: 7;
+    --row-start: 1;
+    --row-end: 3;
+
+    --gradient-degrees: 80deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #181318;
+}
+
+.about:global(.box) {
+    display: grid;
+    grid-template-columns: [background-start] calc(var(--grid-column-width) * 5.5) [background-end];
+    grid-template-rows:
+        [background-start]
+        auto
+        [ background-end];
+}
+
+.about-background {
+    grid-area: background;
+    display: grid;
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
+}
+
 .title {
     margin: 0;
 }

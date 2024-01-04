@@ -1,4 +1,16 @@
 .skills {
+    composes: box from global;
+    --col-start: 1;
+    --col-end: 7;
+    --row-start: 6;
+    --row-end: 7;
+
+    --gradient-degrees: 215deg;
+    --gradient-start: #0c161f;
+    --gradient-end: #0c1520;
+}
+
+.skills-list {
     display: grid;
     grid-template-rows: 68px;
     grid-template-columns: repeat(6, 1fr);

@@ -1,3 +1,15 @@
+.ux-xp {
+    composes: box from global;
+    --col-start: 7;
+    --col-end: 9;
+    --row-start: 5;
+    --row-end: 7;
+
+    --gradient-degrees: 135deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
+}
+
 .experience {
     display: grid;
     justify-content: center;

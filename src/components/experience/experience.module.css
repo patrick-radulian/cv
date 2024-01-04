@@ -1,3 +1,47 @@
+.experience-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [timeline-start] 0.75rem [title-start] auto [timeline-end title-end];
+    grid-template-rows: [title-start] min-content [title-end timeline-start] 1fr [timeline-end];
+}
+
+.experience {
+    composes: box from global;
+    --col-start: 3;
+    --col-end: 7;
+    --row-start: 4;
+    --row-end: 6;
+
+    --gradient-degrees: 180deg;
+    --gradient-start: #12151d;
+    --gradient-end: #0a131e;
+}
+
+.experience:global(.box) {
+    display: grid;
+    grid-template-columns: [image-start] calc(var(--grid-column-width) / 2) [background-start] auto [image-end background-end];
+    grid-template-rows:
+        [image-start background-start]
+        calc(var(--grid-column-width) / 2)
+        [image-end]
+        auto
+        [ background-end];
+}
+
+.experience-image {
+    grid-area: image;
+    width: 8rem;
+    aspect-ratio: 1;
+    margin-top: -3rem;
+}
+
+.experience-background {
+    grid-area: background;
+    display: grid;
+    grid-template-columns: 2px auto 2px;
+    grid-template-rows: 2px auto 2px;
+}
+
 .title {
     grid-area: title;
     margin: 0;
