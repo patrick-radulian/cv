@@ -25,7 +25,7 @@ const Portfolio: React.FC = () => {
                 </BoxContent>
             </Box>
 
-            <Disclaimer>
+            <Disclaimer style={{ ["--row-start" as string]: `16`, ["--row-end" as string]: `17` }}>
                 <p>Mobile version: work in progress</p>
             </Disclaimer>
         </React.Fragment>

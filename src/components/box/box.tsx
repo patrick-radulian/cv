@@ -5,11 +5,12 @@ type BoxProps = {
     className?: string;
     children?: React.ReactNode;
     noBg?: boolean;
+    style?: React.CSSProperties;
 };
 
 const Box: React.FC<PropsWithChildren<BoxProps>> = (props: BoxProps) => {
     return (
-        <div className={`${props.className} box`}>
+        <div className={`${props.className} box`} style={props.style}>
             {!props.noBg && <BoxBackground />}
             {props.children}
         </div>
