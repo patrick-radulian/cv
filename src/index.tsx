@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Grid from "components/grid/grid";
 import Resume from "./pages/resume/resume";
-import NewPortfolio from "./pages/portfolio/portfolio";
+import Portfolio from "./pages/portfolio/portfolio";
 
 import "./index.css";
 
@@ -13,7 +13,7 @@ root.render(
         <Routes>
             <Route path="/" element={<Grid />}>
                 <Route path="/" element={<Resume />} />
-                <Route path="/portfolio" element={<NewPortfolio />} />
+                <Route path="/portfolio" element={<Portfolio />} />
             </Route>
         </Routes>
     </HashRouter>
