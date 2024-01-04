@@ -1,8 +1,8 @@
 .name {
-    --col-start: 3;
-    --col-end: 8;
-    --row-start: 3;
-    --row-end: 4;
+    --col-start: 5;
+    --col-end: 14;
+    --row-start: 5;
+    --row-end: 7;
 
     --gradient-degrees: 180deg;
     --gradient-start: #16151c;

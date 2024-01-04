@@ -1,8 +1,8 @@
 .disclaimer {
     --col-start: 1;
-    --col-end: 4;
-    --row-start: 8;
-    --row-end: 9;
+    --col-end: 7;
+    --row-start: 15;
+    --row-end: 16;
 
     --gradient-degrees: 45deg;
     --gradient-start: #0d131d;

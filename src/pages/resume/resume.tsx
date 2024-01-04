@@ -8,7 +8,7 @@ import About from "components/about/about";
 import Skills from "components/skills/skills";
 import Tools from "components/tools/tools";
 import Web from "components/web/web";
-import Portrait from "components/portrait-link/portrait-link";
+import Portrait from "components/portrait/portrait";
 import Codepen from "components/codepen/codepen";
 import GitHub from "components/github/github";
 import Portfolio from "components/portfolio-link/portfolio-link";

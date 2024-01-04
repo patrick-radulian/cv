@@ -1,8 +1,8 @@
 .ux {
-    --col-start: 7;
-    --col-end: 9;
-    --row-start: 5;
-    --row-end: 7;
+    --col-start: 13;
+    --col-end: 17;
+    --row-start: 9;
+    --row-end: 13;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0d131d;

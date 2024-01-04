@@ -1,8 +1,8 @@
 .codepen {
-    --col-start: 8;
-    --col-end: 9;
-    --row-start: 3;
-    --row-end: 4;
+    --col-start: 15;
+    --col-end: 17;
+    --row-start: 5;
+    --row-end: 7;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0f131c;

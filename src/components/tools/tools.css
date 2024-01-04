@@ -1,8 +1,8 @@
 .tools {
-    --col-start: 5;
-    --col-end: 9;
-    --row-start: 7;
-    --row-end: 8;
+    --col-start: 8;
+    --col-end: 17;
+    --row-start: 13;
+    --row-end: 15;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0d131d;

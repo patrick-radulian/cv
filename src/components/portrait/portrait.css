@@ -1,15 +1,15 @@
-.portrait-link {
-    --col-start: 7;
-    --col-end: 9;
+.portrait {
+    --col-start: 13;
+    --col-end: 17;
     --row-start: 1;
-    --row-end: 3;
+    --row-end: 5;
 
     --gradient-degrees: 270deg;
     --gradient-start: #0c141e;
     --gradient-end: #15131b;
 }
 
-.box.portrait-link {
+.box.portrait {
     display: grid;
     grid-template-columns: [image-start background-start] auto [image-end background-end];
     grid-template-rows:
@@ -20,20 +20,20 @@
         [image-end background-end];
 }
 
-.portrait-link-image {
+.portrait-image {
     grid-area: image;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.portrait-link-image img {
+.portrait-image img {
     width: 100%;
     aspect-ratio: 1;
     margin-bottom: 2px;
 }
 
-.portrait-link-background {
+.portrait-background {
     grid-area: background;
     display: grid;
     grid-template-columns: 2px auto 2px;

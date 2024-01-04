@@ -1,8 +1,8 @@
 .portfolio-link {
-    --col-start: 8;
-    --col-end: 9;
-    --row-start: 4;
-    --row-end: 5;
+    --col-start: 15;
+    --col-end: 17;
+    --row-start: 7;
+    --row-end: 9;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0b131d;

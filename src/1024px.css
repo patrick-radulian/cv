@@ -6,9 +6,11 @@
         --grid-auto-rows: 4rem;
     }
 
-    .name {
-        grid-column: 5 / 13;
-        grid-row: 5 / 7;
+    .about {
+        --col-start: 1;
+        --col-end: 3;
+        --row-start: 1;
+        --row-end: 5;
     }
 
     .portrait {
@@ -16,9 +18,9 @@
         grid-row: 1 / 5;
     }
 
-    .about {
-        grid-column: 1 / 9;
-        grid-row: 1 / 5;
+    .name {
+        grid-column: 5 / 13;
+        grid-row: 5 / 7;
     }
 
     .fe-xp {

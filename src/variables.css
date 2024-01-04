@@ -4,9 +4,9 @@
     --tertiary: #404040;
     --shadow: #40404090;
 
-    --grid-column-width: 8rem;
-    --grid-columns: 8;
-    --grid-rows: 7;
+    --grid-column-width: 4rem;
+    --grid-columns: 16;
+    --grid-rows: 14;
     --grid-auto-rows: 4rem;
 
     --box-border-radius: 1rem;

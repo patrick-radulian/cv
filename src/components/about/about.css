@@ -1,8 +1,8 @@
 .about {
     --col-start: 1;
-    --col-end: 7;
+    --col-end: 12;
     --row-start: 1;
-    --row-end: 3;
+    --row-end: 5;
 
     --gradient-degrees: 80deg;
     --gradient-start: #0e141f;
@@ -11,7 +11,7 @@
 
 .box.about {
     display: grid;
-    grid-template-columns: [background-start] calc(var(--grid-column-width) * 5.5) [background-end];
+    grid-template-columns: [background-start] auto [background-end];
     grid-template-rows:
         [background-start]
         auto

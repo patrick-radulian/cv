@@ -6,10 +6,10 @@
 }
 
 .experience {
-    --col-start: 3;
-    --col-end: 7;
-    --row-start: 4;
-    --row-end: 6;
+    --col-start: 5;
+    --col-end: 13;
+    --row-start: 7;
+    --row-end: 11;
 
     --gradient-degrees: 180deg;
     --gradient-start: #12151d;
@@ -18,10 +18,10 @@
 
 .box.experience {
     display: grid;
-    grid-template-columns: [image-start] calc(var(--grid-column-width) / 2) [background-start] auto [image-end background-end];
+    grid-template-columns: [image-start] var(--grid-column-width) [background-start] auto [image-end background-end];
     grid-template-rows:
         [image-start background-start]
-        calc(var(--grid-column-width) / 2)
+        var(--grid-column-width)
         [image-end]
         auto
         [ background-end];

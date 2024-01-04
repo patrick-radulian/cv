@@ -1,8 +1,8 @@
 .github {
-    --col-start: 7;
-    --col-end: 8;
-    --row-start: 4;
-    --row-end: 5;
+    --col-start: 13;
+    --col-end: 15;
+    --row-start: 7;
+    --row-end: 9;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0e131a;

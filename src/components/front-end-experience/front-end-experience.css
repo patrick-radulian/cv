@@ -1,8 +1,8 @@
 .front-end {
     --col-start: 1;
-    --col-end: 3;
-    --row-start: 3;
-    --row-end: 5;
+    --col-end: 5;
+    --row-start: 5;
+    --row-end: 9;
 
     --gradient-degrees: 90deg;
     --gradient-start: #0e141f;
