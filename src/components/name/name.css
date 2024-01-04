@@ -22,7 +22,7 @@
     background-clip: text;
     color: transparent;
     margin: 0;
-    text-align: end;
+    text-align: var(--text-align);
     line-height: 1;
     font-size: inherit;
 }

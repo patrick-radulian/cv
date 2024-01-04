@@ -12,7 +12,6 @@ import Portrait from "components/portrait/portrait";
 import Codepen from "components/codepen/codepen";
 import GitHub from "components/github/github";
 import Portfolio from "components/portfolio-link/portfolio-link";
-import Disclaimer from "components/disclaimer/disclaimer";
 
 const Resume: React.FC = () => {
     return (
@@ -29,9 +28,6 @@ const Resume: React.FC = () => {
             <UXExperience />
             <Web />
             <Tools />
-            <Disclaimer className="home-disclaimer">
-                <p>Mobile version: work in progress</p>
-            </Disclaimer>
         </React.Fragment>
     );
 };

@@ -4,6 +4,7 @@
 @import "./box.css";
 
 @import "./1024px.css";
+@import "./768px.css";
 
 :root {
     background: radial-gradient(circle at 50% 0, rgb(36 20 20 / 80%), rgba(255, 0, 0, 0) 70.71%),

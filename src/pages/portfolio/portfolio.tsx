@@ -7,7 +7,6 @@ import "yet-another-react-lightbox/plugins/captions.css";
 import Box from "components/box/box";
 import BoxContent from "components/box-content/box-content";
 import Sketches from "components/sketches/sketches";
-import Disclaimer from "components/disclaimer/disclaimer";
 
 const Portfolio: React.FC = () => {
     return (
@@ -24,10 +23,6 @@ const Portfolio: React.FC = () => {
                     <Sketches />
                 </BoxContent>
             </Box>
-
-            <Disclaimer className="portfolio-disclaimer">
-                <p>Mobile version: work in progress</p>
-            </Disclaimer>
         </React.Fragment>
     );
 };

@@ -111,18 +111,4 @@
         --row-start: 3;
         --row-end: 16;
     }
-
-    .home-disclaimer {
-        --col-start: 1;
-        --col-end: 7;
-        --row-start: 17;
-        --row-end: 18;
-    }
-
-    .portfolio-disclaimer {
-        --col-start: 1;
-        --col-end: 7;
-        --row-start: 16;
-        --row-end: 17;
-    }
 }

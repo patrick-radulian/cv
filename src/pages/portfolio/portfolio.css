@@ -31,10 +31,3 @@
     --gradient-start: #0e141f;
     --gradient-end: #181318;
 }
-
-.portfolio-disclaimer {
-    --col-start: 1;
-    --col-end: 7;
-    --row-start: 14;
-    --row-end: 15;
-}
