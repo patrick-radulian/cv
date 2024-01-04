@@ -29,7 +29,7 @@ const Resume: React.FC = () => {
             <UXExperience />
             <Web />
             <Tools />
-            <Disclaimer>
+            <Disclaimer className="home-disclaimer">
                 <p>Mobile version: work in progress</p>
             </Disclaimer>
         </React.Fragment>

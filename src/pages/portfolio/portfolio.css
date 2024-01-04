@@ -1,6 +1,6 @@
 .portfolio-title {
     --col-start: 1;
-    --col-end: 13;
+    --col-end: 17;
     --row-start: 1;
     --row-end: 2;
 
@@ -23,11 +23,18 @@
 
 .portfolio-container {
     --col-start: 1;
-    --col-end: 13;
+    --col-end: 17;
     --row-start: 3;
-    --row-end: 16;
+    --row-end: 14;
 
     --gradient-degrees: 80deg;
     --gradient-start: #0e141f;
     --gradient-end: #181318;
+}
+
+.portfolio-disclaimer {
+    --col-start: 1;
+    --col-end: 7;
+    --row-start: 14;
+    --row-end: 15;
 }

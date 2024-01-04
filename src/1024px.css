@@ -2,7 +2,6 @@
     :root {
         --grid-column-width: 4rem;
         --grid-columns: 12;
-        --grid-rows: 7;
         --grid-auto-rows: 4rem;
     }
 
@@ -106,10 +105,24 @@
         --row-end: 8;
     }
 
-    .disclaimer {
+    .portfolio-container {
+        --col-start: 1;
+        --col-end: 13;
+        --row-start: 3;
+        --row-end: 16;
+    }
+
+    .home-disclaimer {
         --col-start: 1;
         --col-end: 7;
         --row-start: 17;
         --row-end: 18;
+    }
+
+    .portfolio-disclaimer {
+        --col-start: 1;
+        --col-end: 7;
+        --row-start: 16;
+        --row-end: 17;
     }
 }
