@@ -26,9 +26,9 @@ const Experience: React.FC = () => {
                         <h1 className="title">Work Experience</h1>
                         <div className="timeline">
                             {roles.map((segment, i) => (
-                                <div className="role" style={{ ["--n" as string]: i + 1 }}>
+                                <div className="role" key={i} style={{ ["--n" as string]: i + 1 }}>
                                     {segment.map((role) => (
-                                        <React.Fragment>
+                                        <React.Fragment key={role}>
                                             {role}
                                             <br />
                                         </React.Fragment>
@@ -37,10 +37,10 @@ const Experience: React.FC = () => {
                             ))}
 
                             {_.range(1, 7).map((i) => (
-                                <div className="timeline-segment" style={{ ["--n" as string]: i }} />
+                                <div className="timeline-segment" key={i} style={{ ["--n" as string]: i }} />
                             ))}
                             {durations.map((duration, i) => (
-                                <div className="circle" style={{ ["--n" as string]: i + 1 }}>
+                                <div className="circle" key={i} style={{ ["--n" as string]: i + 1 }}>
                                     <div className="circle-inner">{duration}</div>
                                 </div>
                             ))}

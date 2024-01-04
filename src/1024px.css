@@ -1,60 +1,115 @@
 @media screen and (max-width: 1024px) {
     :root {
-        --grid-column-width: 6rem;
-        --grid-columns: 8;
+        --grid-column-width: 4rem;
+        --grid-columns: 12;
         --grid-rows: 7;
         --grid-auto-rows: 4rem;
     }
 
     .about {
         --col-start: 1;
-        --col-end: 3;
+        --col-end: 8;
         --row-start: 1;
-        --row-end: 5;
+        --row-end: 7;
     }
 
     .portrait {
-        grid-column: 11 / 15;
-        grid-row: 1 / 5;
+        --col-start: 10;
+        --col-end: 13;
+        --row-start: 1;
+        --row-end: 4;
     }
 
     .name {
-        grid-column: 5 / 13;
-        grid-row: 5 / 7;
+        --col-start: 8;
+        --col-end: 13;
+        --row-start: 4;
+        --row-end: 6;
+
+        font-size: 2rem;
     }
 
-    .fe-xp {
-        grid-column: 1 / 5;
-        grid-row: 5 / 9;
+    .front-end {
+        --col-start: 1;
+        --col-end: 4;
+        --row-start: 7;
+        --row-end: 10;
+
+        --number-size: 4rem;
+        --years-size: 1.5rem;
+        --text-size: 1.3rem;
+        --line-height: 1.2;
     }
 
-    .ux-xp {
-        grid-column: 11 / 15;
-        grid-row: 13 / 17;
+    .ux {
+        --col-start: 10;
+        --col-end: 13;
+        --row-start: 14;
+        --row-end: 17;
+
+        --number-size: 4rem;
+        --years-size: 1.5rem;
+        --text-size: 1.3rem;
+        --line-height: 1.2;
     }
 
     .experience {
-        grid-column: 5 / 11;
-        grid-row: 7 / 14;
+        --col-start: 5;
+        --col-end: 13;
+        --row-start: 8;
+        --row-end: 12;
     }
 
     .skills {
-        grid-column: 1 / 9;
-        grid-row: 14 / 17;
+        --col-start: 1;
+        --col-end: 6;
+        --row-start: 11;
+        --row-end: 15;
+
+        --grid-template-rows: repeat(2, 1fr);
+        --grid-template-columns: repeat(3, 1fr);
+        --grid-gap: 2rem;
+    }
+
+    .web {
+        --col-start: 1;
+        --col-end: 8;
+        --row-start: 15;
+        --row-end: 17;
+    }
+
+    .tools {
+        --col-start: 6;
+        --col-end: 13;
+        --row-start: 12;
+        --row-end: 14;
     }
 
     .github {
-        grid-column: 13 / 15;
-        grid-row: 5 / 7;
+        --col-start: 4;
+        --col-end: 6;
+        --row-start: 9;
+        --row-end: 11;
     }
 
     .codepen {
-        grid-column: 11 / 15;
-        grid-row: 7 / 9;
+        --col-start: 9;
+        --col-end: 11;
+        --row-start: 6;
+        --row-end: 8;
     }
 
-    .portfolio {
-        grid-column: 11 / 13;
-        grid-row: 9 / 11;
+    .portfolio-link {
+        --col-start: 11;
+        --col-end: 13;
+        --row-start: 6;
+        --row-end: 8;
+    }
+
+    .disclaimer {
+        --col-start: 1;
+        --col-end: 7;
+        --row-start: 17;
+        --row-end: 18;
     }
 }

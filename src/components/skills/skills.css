@@ -4,6 +4,10 @@
     --row-start: 11;
     --row-end: 13;
 
+    --grid-template-rows: 1fr;
+    --grid-template-columns: repeat(6, 1fr);
+    --grid-gap: 1rem;
+
     --gradient-degrees: 215deg;
     --gradient-start: #0c161f;
     --gradient-end: #0c1520;
@@ -11,8 +15,10 @@
 
 .skills-list {
     display: grid;
-    grid-template-rows: 68px;
-    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+    grid-template-rows: var(--grid-template-rows);
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--grid-gap);
 }
 
 .skill {
@@ -24,7 +30,6 @@
 }
 
 .skill img {
-    max-height: 100%;
     aspect-ratio: 1;
     filter: invert(1) grayscale(1) brightness(2);
 }

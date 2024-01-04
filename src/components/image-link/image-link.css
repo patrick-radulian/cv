@@ -31,4 +31,5 @@
 .image-link-label {
     font-size: 0.75rem;
     color: var(--primary);
+    text-align: center;
 }
