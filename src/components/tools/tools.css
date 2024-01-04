@@ -4,6 +4,10 @@
     --row-start: 13;
     --row-end: 15;
 
+    --grid-template-rows: 1fr;
+    --grid-template-columns: repeat(5, 1fr);
+    --grid-gap: 1rem;
+
     --gradient-degrees: 135deg;
     --gradient-start: #0d131d;
     --gradient-end: #07141d;
@@ -11,6 +15,8 @@
 
 .tools-list {
     display: grid;
-    grid-template-rows: 68px;
-    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    grid-template-rows: var(--grid-template-rows);
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--grid-gap);
 }

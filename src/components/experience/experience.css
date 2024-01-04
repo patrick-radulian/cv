@@ -1,7 +1,7 @@
 .experience-container {
     display: grid;
     height: 100%;
-    grid-template-columns: [timeline-start] 0.75rem [title-start] auto [timeline-end title-end];
+    grid-template-columns: [timeline-start] var(--title-offset, calc(var(--grid-column-width) / 4)) [title-start] auto [timeline-end title-end];
     grid-template-rows: [title-start] min-content [title-end timeline-start] 1fr [timeline-end];
 }
 

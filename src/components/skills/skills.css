@@ -20,21 +20,3 @@
     grid-template-columns: var(--grid-template-columns);
     gap: var(--grid-gap);
 }
-
-.skill {
-    display: grid;
-    grid-template-rows: minmax(0, auto) auto;
-    grid-template-columns: auto;
-    justify-items: center;
-    gap: 0.25rem;
-}
-
-.skill img {
-    aspect-ratio: 1;
-    filter: invert(1) grayscale(1) brightness(2);
-}
-
-.label {
-    font-size: 0.75rem;
-    color: var(--primary);
-}

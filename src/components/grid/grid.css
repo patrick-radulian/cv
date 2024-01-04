@@ -6,5 +6,5 @@
     grid-template-columns: repeat(var(--grid-columns), var(--grid-column-width));
     grid-auto-rows: var(--grid-auto-rows);
 
-    background-color: brown;
+    /* background-color: brown; */
 }

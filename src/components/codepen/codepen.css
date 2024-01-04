@@ -4,6 +4,8 @@
     --row-start: 5;
     --row-end: 7;
 
+    --grid-template-rows: 68px;
+
     --gradient-degrees: 135deg;
     --gradient-start: #0f131c;
     --gradient-end: #0a131e;
@@ -11,6 +13,6 @@
 
 .codepen-image {
     display: grid;
-    grid-template-rows: 68px;
+    grid-template-rows: var(--grid-template-rows);
     grid-template-columns: 1fr;
 }

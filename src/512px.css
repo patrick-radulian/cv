@@ -1,0 +1,145 @@
+@media screen and (max-width: 512px) {
+    :root {
+        --grid-column-width: 2.5rem;
+        --grid-columns: 9;
+        --grid-auto-rows: 2.5rem;
+        --box-content-padding: 0.75rem;
+    }
+
+    .about {
+        --col-start: 1;
+        --col-end: 10;
+        --row-start: 5;
+        --row-end: 15;
+    }
+
+    .portrait {
+        --col-start: 6;
+        --col-end: 10;
+        --row-start: 1;
+        --row-end: 5;
+    }
+
+    .name {
+        --col-start: 1;
+        --col-end: 5;
+        --row-start: 3;
+        --row-end: 5;
+
+        font-size: 1.4rem;
+        --text-align: start;
+    }
+
+    .front-end {
+        --col-start: 7;
+        --col-end: 10;
+        --row-start: 23;
+        --row-end: 26;
+
+        --box-content-padding: 0.2rem;
+        --number-size: 2.8rem;
+        --years-size: 1.2rem;
+        --text-size: 0.9rem;
+        --line-height: 1.2;
+    }
+
+    .ux {
+        --col-start: 7;
+        --col-end: 10;
+        --row-start: 26;
+        --row-end: 29;
+
+        --box-content-padding: 0.2rem;
+        --number-size: 2.8rem;
+        --years-size: 1.2rem;
+        --text-size: 0.9rem;
+        --line-height: 1.2;
+    }
+
+    .experience {
+        --col-start: 1;
+        --col-end: 10;
+        --row-start: 15;
+        --row-end: 23;
+
+        --title-offset: calc(var(--grid-column-width));
+    }
+
+    .skills {
+        --col-start: 1;
+        --col-end: 7;
+        --row-start: 25;
+        --row-end: 31;
+
+        --box-content-padding: 0.75rem;
+        --grid-template-rows: repeat(3, 1fr);
+        --grid-template-columns: repeat(2, 1fr);
+        --grid-gap: 1rem;
+    }
+
+    .web {
+        --col-start: 2;
+        --col-end: 10;
+        --row-start: 31;
+        --row-end: 33;
+
+        --box-content-padding: 0.5rem;
+    }
+
+    .tools {
+        --col-start: 1;
+        --col-end: 9;
+        --row-start: 33;
+        --row-end: 37;
+
+        --box-content-padding: 0.75rem;
+        --grid-template-rows: repeat(2, 1fr);
+        --grid-template-columns: repeat(3, 1fr);
+        --grid-gap: 1rem;
+    }
+
+    .github {
+        --col-start: 3;
+        --col-end: 5;
+        --row-start: 23;
+        --row-end: 25;
+
+        --grid-template-rows: 50px;
+        --box-content-padding: 0.3rem;
+    }
+
+    .codepen {
+        --col-start: 1;
+        --col-end: 3;
+        --row-start: 23;
+        --row-end: 25;
+
+        --grid-template-rows: 50px;
+        --box-content-padding: 0.3rem;
+    }
+
+    .portfolio-link {
+        --col-start: 5;
+        --col-end: 7;
+        --row-start: 23;
+        --row-end: 25;
+
+        --grid-template-rows: 50px;
+        --box-content-padding: 0.3rem;
+    }
+
+    .portfolio-title {
+        --col-start: 1;
+        --col-end: 10;
+        --row-start: 1;
+        --row-end: 4;
+    }
+
+
+    .portfolio-container {
+        --col-start: 1;
+        --col-end: 10;
+        --row-start: 4;
+        --row-end: 33;
+    }
+}
