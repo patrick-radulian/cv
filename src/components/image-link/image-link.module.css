@@ -8,6 +8,8 @@
 
 .image-mask {
     display: flex;
+    height: 100%;
+    aspect-ratio: 1;
     background: linear-gradient(to bottom right, white 8rem, #00dcff 8rem, #00dcff 12rem, #e600ff 14rem, #ff005a 16rem);
     mask-image: var(--mask-src);
     background-size: 16rem 16rem;

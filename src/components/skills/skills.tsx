@@ -11,12 +11,12 @@ import ImageLink from "components/image-link/image-link";
 const Skills: React.FC = () => {
     return (
         <div className={styles.skills}>
-            <ImageLink src={PRESENTING} label="Presenting" />
-            <ImageLink src={PROTOTYPING} label="Prototyping" />
-            <ImageLink src={DT} label="Design Thinking" />
-            <ImageLink src={INTERVIEWING} label="Interviewing" />
-            <ImageLink src={STORYTELLING} label="Story Telling" />
-            <ImageLink src={USERRESEARCH} label="User Research" />
+            <ImageLink src={PRESENTING} to="" label="Presenting" />
+            <ImageLink src={PROTOTYPING} to="" label="Prototyping" />
+            <ImageLink src={DT} to="" label="Design Thinking" />
+            <ImageLink src={INTERVIEWING} to="" label="Interviewing" />
+            <ImageLink src={STORYTELLING} to="" label="Story Telling" />
+            <ImageLink src={USERRESEARCH} to="" label="User Research" />
         </div>
     );
 };
