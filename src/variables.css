@@ -7,9 +7,10 @@
     --grid-column-width: 4rem;
     --grid-columns: 16;
     --grid-auto-rows: 4rem;
+    --grid-gap: 1rem;
 
     --box-border-radius: 1rem;
-    --box-margin: 0.5rem;
+    /* --box-margin: 0.5rem; */
     --box-border-width: 2px;
     --box-content-padding: 1.25rem;
 }
