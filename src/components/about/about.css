@@ -1,5 +1,4 @@
 .about {
-    composes: box from global;
     --col-start: 1;
     --col-end: 7;
     --row-start: 1;
@@ -10,7 +9,7 @@
     --gradient-end: #181318;
 }
 
-.about:global(.box) {
+.box.about {
     display: grid;
     grid-template-columns: [background-start] calc(var(--grid-column-width) * 5.5) [background-end];
     grid-template-rows:
@@ -22,8 +21,8 @@
 .about-background {
     grid-area: background;
     display: grid;
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
+    grid-template-columns: var(--box-border-width) auto var(--box-border-width);
+    grid-template-rows: var(--box-border-width) auto var(--box-border-width);
 }
 
 .title {

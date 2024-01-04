@@ -1,5 +1,4 @@
 .web {
-    composes: box from global;
     --col-start: 1;
     --col-end: 5;
     --row-start: 7;

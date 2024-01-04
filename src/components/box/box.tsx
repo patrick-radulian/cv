@@ -9,7 +9,7 @@ type BoxProps = {
 
 const Box: React.FC<PropsWithChildren<BoxProps>> = (props: BoxProps) => {
     return (
-        <div className={`${props.className}`}>
+        <div className={`${props.className} box`}>
             {!props.noBg && <BoxBackground />}
             {props.children}
         </div>

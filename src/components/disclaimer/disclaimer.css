@@ -1,5 +1,4 @@
 .disclaimer {
-    composes: box from global;
     --col-start: 1;
     --col-end: 4;
     --row-start: 8;

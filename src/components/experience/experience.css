@@ -6,7 +6,6 @@
 }
 
 .experience {
-    composes: box from global;
     --col-start: 3;
     --col-end: 7;
     --row-start: 4;
@@ -17,7 +16,7 @@
     --gradient-end: #0a131e;
 }
 
-.experience:global(.box) {
+.box.experience {
     display: grid;
     grid-template-columns: [image-start] calc(var(--grid-column-width) / 2) [background-start] auto [image-end background-end];
     grid-template-rows:
@@ -38,8 +37,8 @@
 .experience-background {
     grid-area: background;
     display: grid;
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
+    grid-template-columns: var(--box-border-width) auto var(--box-border-width);
+    grid-template-rows: var(--box-border-width) auto var(--box-border-width);
 }
 
 .title {
@@ -48,11 +47,12 @@
 }
 
 .timeline {
+    --column: calc(1rem - var(--box-border-width) / 2) var(--box-border-width) calc(1rem - var(--box-border-width) / 2);
     grid-area: timeline;
     display: grid;
-    grid-template-columns: 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 15px 2px 15px 1fr 1rem;
-    grid-template-rows: 1fr 1rem 15px 2px 15px 1rem 1fr;
-    margin-left: -1.25rem;
+    grid-template-columns: 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr 1rem;
+    grid-template-rows: 1fr 1rem var(--column) 1rem 1fr;
+    margin-left: calc(var(--box-content-padding) * -1);
     font-size: 0.7rem;
 }
 
@@ -107,7 +107,7 @@
     place-items: center;
     grid-column: calc(2 + (var(--n) - 1) * 4) / calc(5 + (var(--n) - 1) * 4);
     grid-row: 3 / 6;
-    border-radius: 1rem;
+    border-radius: var(--box-border-radius);
     font-size: 0.8rem;
     padding: 2px;
 }

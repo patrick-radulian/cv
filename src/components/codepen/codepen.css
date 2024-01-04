@@ -1,5 +1,4 @@
 .codepen {
-    composes: box from global;
     --col-start: 8;
     --col-end: 9;
     --row-start: 3;

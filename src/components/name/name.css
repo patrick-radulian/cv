@@ -1,5 +1,4 @@
 .name {
-    composes: box from global;
     --col-start: 3;
     --col-end: 8;
     --row-start: 3;
@@ -10,7 +9,7 @@
     --gradient-end: #12151d;
 }
 
-.container {
+.text-container {
     display: grid;
     align-items: center;
     height: 100%;

@@ -1,5 +1,4 @@
-.portrait {
-    composes: box from global;
+.portrait-link {
     --col-start: 7;
     --col-end: 9;
     --row-start: 1;
@@ -10,7 +9,7 @@
     --gradient-end: #15131b;
 }
 
-.portrait:global(.box) {
+.box.portrait-link {
     display: grid;
     grid-template-columns: [image-start background-start] auto [image-end background-end];
     grid-template-rows:
@@ -21,20 +20,20 @@
         [image-end background-end];
 }
 
-.portrait-image {
+.portrait-link-image {
     grid-area: image;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.portrait-image img {
+.portrait-link-image img {
     width: 100%;
     aspect-ratio: 1;
     margin-bottom: 2px;
 }
 
-.portrait-background {
+.portrait-link-background {
     grid-area: background;
     display: grid;
     grid-template-columns: 2px auto 2px;

@@ -1,0 +1,16 @@
+:root {
+    --primary: #e0e0e0;
+    --secondary: #ff005a;
+    --tertiary: #404040;
+    --shadow: #40404090;
+
+    --grid-column-width: 8rem;
+    --grid-columns: 8;
+    --grid-rows: 7;
+    --grid-auto-rows: 4rem;
+
+    --box-border-radius: 1rem;
+    --box-margin: 0.5rem;
+    --box-border-width: 2px;
+    --box-content-padding: 1.25rem;
+}

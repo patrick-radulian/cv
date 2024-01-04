@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./box-background.module.css";
+import "./box-background.css";
 
 const BoxBackground: React.FC = () => {
-    return <div className={styles["box-bg"]} />;
+    return <div className="box-bg" />;
 };
 
 export default BoxBackground;

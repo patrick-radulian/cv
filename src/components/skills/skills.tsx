@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./skills.module.css";
+import "./skills.css";
 import PRESENTING from "src/images/icons/Presenting.svg";
 import PROTOTYPING from "src/images/icons/Prototyping.svg";
 import DT from "src/images/icons/DesignThinking.svg";
@@ -12,9 +12,9 @@ import BoxContent from "components/box-content/box-content";
 
 const Skills: React.FC = () => {
     return (
-        <Box className={styles.skills}>
+        <Box className="skills">
             <BoxContent>
-                <div className={styles["skills-list"]}>
+                <div className="skills-list">
                     <ImageLink src={PRESENTING} to="" label="Presenting" />
                     <ImageLink src={PROTOTYPING} to="" label="Prototyping" />
                     <ImageLink src={DT} to="" label="Design Thinking" />

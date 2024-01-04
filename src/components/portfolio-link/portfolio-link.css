@@ -1,5 +1,4 @@
-.portfolio {
-    composes: box from global;
+.portfolio-link {
     --col-start: 8;
     --col-end: 9;
     --row-start: 4;
@@ -10,7 +9,7 @@
     --gradient-end: #09131e;
 }
 
-.portfolio-image {
+.portfolio-link-image {
     display: grid;
     grid-template-rows: 68px;
     grid-template-columns: 1fr;

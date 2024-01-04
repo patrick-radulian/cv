@@ -1,4 +1,4 @@
-.container {
+.image-link {
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: auto;
@@ -18,17 +18,17 @@
     transition: background-position 0.15s linear;
 }
 
-.container:hover .image-mask {
+.image-link:hover .image-mask {
     background-position: -8rem -8rem;
 }
 
-.container img {
+.image-link img {
     max-height: 100%;
     aspect-ratio: 1;
     opacity: 0;
 }
 
-.label {
+.image-link-label {
     font-size: 0.75rem;
     color: var(--primary);
 }

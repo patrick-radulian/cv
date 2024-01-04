@@ -1,12 +1,11 @@
-@import "./box.css";
 @import "./properties.css";
+@import "./variables.css";
+
+@import "./box.css";
+
+@import "./1024px.css";
 
 :root {
-    --primary: #e0e0e0;
-    --secondary: #ff005a;
-    --tertiary: #404040;
-    --shadow: #40404090;
-
     background: radial-gradient(circle at 50% 0, rgb(36 20 20 / 80%), rgba(255, 0, 0, 0) 70.71%),
         radial-gradient(circle at 6.7% 75%, rgb(19 23 31 / 80%), rgba(0, 0, 255, 0) 70.71%),
         radial-gradient(circle at 93.3% 75%, rgb(15 21 23 / 60%), rgba(0, 255, 0, 0) 70.71%) #001223;
@@ -22,7 +21,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.32;
-    overflow-x: hidden;
 }
 
 * {
@@ -47,6 +45,12 @@ a[href="#/"] {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }

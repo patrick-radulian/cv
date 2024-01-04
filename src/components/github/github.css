@@ -1,5 +1,4 @@
 .github {
-    composes: box from global;
     --col-start: 7;
     --col-end: 8;
     --row-start: 4;

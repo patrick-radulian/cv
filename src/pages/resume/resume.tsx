@@ -8,11 +8,11 @@ import About from "components/about/about";
 import Skills from "components/skills/skills";
 import Tools from "components/tools/tools";
 import Web from "components/web/web";
-import Portrait from "components/portrait/portrait";
+import Portrait from "components/portrait-link/portrait-link";
 import Codepen from "components/codepen/codepen";
 import GitHub from "components/github/github";
-import Portfolio from "components/portfolio/portfolio";
-import Disclaimer from "components/disclaimer/diclaimer";
+import Portfolio from "components/portfolio-link/portfolio-link";
+import Disclaimer from "components/disclaimer/disclaimer";
 
 const Resume: React.FC = () => {
     return (

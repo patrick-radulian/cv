@@ -1,5 +1,4 @@
 .tools {
-    composes: box from global;
     --col-start: 5;
     --col-end: 9;
     --row-start: 7;

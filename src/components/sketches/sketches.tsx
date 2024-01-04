@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./sketches.module.css";
+import "./sketches.css";
 
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
@@ -44,7 +44,7 @@ const Sketches: React.FC = () => {
 
     return (
         <React.Fragment>
-            <h1 className={styles.title}>Sketches</h1>
+            <h1 className="sketches-title">Sketches</h1>
 
             <PhotoAlbum
                 layout="rows"

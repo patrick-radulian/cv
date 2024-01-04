@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./tools.module.css";
+import "./tools.css";
 import ADOBECS from "src/images/icons/AdobeCS.svg";
 import UNREAL from "src/images/icons/UE.svg";
 import FIGMA from "src/images/icons/Figma.svg";
@@ -11,9 +11,9 @@ import BoxContent from "components/box-content/box-content";
 
 const Tools: React.FC = () => {
     return (
-        <Box className={styles.tools}>
+        <Box className="tools">
             <BoxContent>
-                <div className={styles["tools-list"]}>
+                <div className="tools-list">
                     <ImageLink src={FIGMA} to="https://www.figma.com/" target="_blank" label="Figma" />
                     <ImageLink src={PROTOIO} to="https://proto.io/" target="_blank" label="Proto.io" />
                     <ImageLink

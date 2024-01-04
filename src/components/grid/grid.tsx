@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import styles from "./grid.module.css";
+import "./grid.css";
 
 const Grid: React.FC = () => {
     return (
-        <div className={styles.grid}>
+        <div className="grid">
             <Outlet />
         </div>
     );

@@ -1,25 +1,25 @@
 import React from "react";
+import "./portfolio.css";
+
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-
-import styles from "./portfolio.module.css";
 
 import Box from "components/box/box";
 import BoxContent from "components/box-content/box-content";
 import Sketches from "components/sketches/sketches";
-import Disclaimer from "components/disclaimer/diclaimer";
+import Disclaimer from "components/disclaimer/disclaimer";
 
 const Portfolio: React.FC = () => {
     return (
         <React.Fragment>
-            <Box className={styles.title}>
+            <Box className="portfolio-title">
                 <BoxContent>
                     <h1>Portfolio</h1>
                     <h4>Work in Progress</h4>
                 </BoxContent>
             </Box>
 
-            <Box className={styles.portfolio}>
+            <Box className="portfolio-container">
                 <BoxContent>
                     <Sketches />
                 </BoxContent>

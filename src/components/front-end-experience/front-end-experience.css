@@ -1,16 +1,15 @@
-.ux-xp {
-    composes: box from global;
-    --col-start: 7;
-    --col-end: 9;
-    --row-start: 5;
-    --row-end: 7;
+.front-end {
+    --col-start: 1;
+    --col-end: 3;
+    --row-start: 3;
+    --row-end: 5;
 
-    --gradient-degrees: 135deg;
-    --gradient-start: #0d131d;
-    --gradient-end: #07141d;
+    --gradient-degrees: 90deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #12161d;
 }
 
-.experience {
+.front-end-experience {
     display: grid;
     justify-content: center;
     align-items: baseline;
@@ -20,7 +19,7 @@
     color: transparent;
 }
 
-.number {
+.front-end-number {
     grid-column: 2 / 3;
     font-size: 6rem;
     line-height: 1;
@@ -28,13 +27,13 @@
     margin: 0;
 }
 
-.years {
+.front-end-years {
     grid-column: 3 / 4;
     font-size: 2.5rem;
     text-align: start;
 }
 
-.engineering {
+.front-end-text {
     display: grid;
     place-content: center;
     text-align: center;

@@ -1,16 +1,15 @@
-.fe-xp {
-    composes: box from global;
-    --col-start: 1;
-    --col-end: 3;
-    --row-start: 3;
-    --row-end: 5;
+.ux {
+    --col-start: 7;
+    --col-end: 9;
+    --row-start: 5;
+    --row-end: 7;
 
-    --gradient-degrees: 90deg;
-    --gradient-start: #0e141f;
-    --gradient-end: #12161d;
+    --gradient-degrees: 135deg;
+    --gradient-start: #0d131d;
+    --gradient-end: #07141d;
 }
 
-.experience {
+.ux-experience {
     display: grid;
     justify-content: center;
     align-items: baseline;
@@ -20,7 +19,7 @@
     color: transparent;
 }
 
-.number {
+.ux-number {
     grid-column: 2 / 3;
     font-size: 6rem;
     line-height: 1;
@@ -28,13 +27,13 @@
     margin: 0;
 }
 
-.years {
+.ux-years {
     grid-column: 3 / 4;
     font-size: 2.5rem;
     text-align: start;
 }
 
-.engineering {
+.ux-text {
     display: grid;
     place-content: center;
     text-align: center;

@@ -1,5 +1,4 @@
-.title {
-    composes: box from global;
+.portfolio-title {
     --col-start: 1;
     --col-end: 9;
     --row-start: 1;
@@ -12,18 +11,17 @@
     --gradient-end: #181318;
 }
 
-.title h1 {
+.portfolio-title h1 {
     margin: 0;
     padding: 0;
 }
 
-.title h4 {
+.portfolio-title h4 {
     margin: 0;
     padding: 0;
 }
 
-.portfolio {
-    composes: box from global;
+.portfolio-container {
     --col-start: 1;
     --col-end: 9;
     --row-start: 2;

@@ -10,14 +10,14 @@
     );
 
     display: grid;
-    border-radius: 1rem;
-    margin: 0.5rem;
+    border-radius: var(--box-border-radius);
+    margin: var(--box-margin);
 
     grid-column: var(--col-start) / var(--col-end);
     grid-row: var(--row-start) / var(--row-end);
 
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
+    grid-template-columns: var(--box-border-width) auto var(--box-border-width);
+    grid-template-rows: var(--box-border-width) auto var(--box-border-width);
 
     animation: moveOffsetX 15s ease infinite alternate, moveOffsetY 30s ease infinite alternate;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, To } from "react-router-dom";
-import styles from "./image-link.module.css";
+import "./image-link.css";
 
 type ImageLinkProps = {
     label?: string;
@@ -12,11 +12,11 @@ type ImageLinkProps = {
 
 const ImageLink: React.FC<ImageLinkProps> = (props: ImageLinkProps) => {
     return (
-        <Link to={props.to} target={props.target} className={styles.container}>
-            <div className={styles["image-mask"]} style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }}>
+        <Link to={props.to} target={props.target} className="image-link">
+            <div className="image-mask" style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }}>
                 <img src={props.src} alt={props.label} loading="lazy" />
             </div>
-            {props.label && <span className={styles.label}>{props.label}</span>}
+            {props.label && <span className="image-link-label">{props.label}</span>}
         </Link>
     );
 };
