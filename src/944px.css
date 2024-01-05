@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 944px) {
     :root {
         --grid-column-width: 4rem;
         --grid-columns: 8;

@@ -8,11 +8,12 @@ type ImageLinkProps = {
     to: To;
     target?: React.HTMLAttributeAnchorTarget;
     isRouterLink?: boolean;
+    className?: string;
 };
 
 const ImageLink: React.FC<ImageLinkProps> = (props: ImageLinkProps) => {
     return (
-        <Link to={props.to} target={props.target} className="image-link">
+        <Link to={props.to} target={props.target} className={`${props.className} image-link`}>
             <div className="image-mask" style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }}>
                 <img src={props.src} alt={props.label} loading="lazy" />
             </div>

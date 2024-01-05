@@ -1,22 +1,28 @@
 .web {
-    --col-start: 1;
-    --col-end: 8;
-    --row-start: 13;
-    --row-end: 15;
+    --col-start: 3;
+    --col-end: 6;
+    --row-start: 9;
+    --row-end: 12;
 
-    --grid-template-rows: 1fr;
-    --grid-template-columns: repeat(4, 1fr);
-    --grid-gap: 1rem;
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
+    --link-col-span: 1;
+    --link-row-span: 1;
 
     --gradient-degrees: 135deg;
     --gradient-start: #0d131d;
     --gradient-end: #07141d;
 }
 
-.web-skills {
+.web-grid {
     display: grid;
-    height: 100%;
-    grid-template-rows: var(--grid-template-rows);
-    grid-template-columns: var(--grid-template-columns);
-    gap: var(--grid-gap);
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.web-image-link {
+    padding: var(--box-content-padding);
 }

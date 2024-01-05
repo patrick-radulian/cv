@@ -1,7 +1,0 @@
-.box-content {
-    padding: var(--box-content-padding);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background: linear-gradient(var(--gradient-degrees), var(--gradient-start), var(--gradient-end));
-    border-radius: calc(1rem - var(--box-border-width));
-}

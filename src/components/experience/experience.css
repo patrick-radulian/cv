@@ -1,108 +1,92 @@
-.experience-container {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [timeline-start] var(--title-offset, calc(var(--grid-column-width) / 4)) [title-start] auto [timeline-end title-end];
-    grid-template-rows: [title-start] min-content [title-end timeline-start] 1fr [timeline-end];
-}
-
 .experience {
     --col-start: 5;
     --col-end: 13;
     --row-start: 7;
     --row-end: 11;
 
+    --bg-grid-col: 2 / -1;
+    --bg-grid-row: 1 / -1;
+
     --gradient-degrees: 180deg;
     --gradient-start: #12151d;
     --gradient-end: #0a131e;
 }
 
-.box.experience {
-    display: grid;
-    grid-template-columns: [image-start] var(--grid-column-width) [background-start] auto [image-end background-end];
-    grid-template-rows:
-        [image-start background-start]
-        var(--grid-column-width)
-        [image-end]
-        auto
-        [ background-end];
-}
-
 .experience-image {
-    grid-area: image;
-    width: 8rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
     aspect-ratio: 1;
-    margin-top: -3rem;
+    margin-top: calc(var(--grid-column-width) * -1);
+    margin-left: calc(var(--grid-gap) / 2);
 }
 
-.experience-background {
-    grid-area: background;
-    display: grid;
-    grid-template-columns: var(--box-border-width) auto var(--box-border-width);
-    grid-template-rows: var(--box-border-width) auto var(--box-border-width);
+.experience-title {
+    display: flex;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    align-items: center;
+    margin-left: calc(var(--grid-column-width) / 2);
 }
 
-.title {
-    grid-area: title;
-    margin: 0;
-}
-
-.timeline {
+.experience-timeline {
     --column: calc(1rem - var(--box-border-width) / 2) var(--box-border-width) calc(1rem - var(--box-border-width) / 2);
-    grid-area: timeline;
     display: grid;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
     grid-template-columns: 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr var(--column) 1fr 1rem;
     grid-template-rows: 1fr 1rem var(--column) 1rem 1fr;
-    margin-left: calc(var(--box-content-padding) * -1);
-    font-size: 0.7rem;
+    margin-right: var(--grid-gap);
+    margin-left: var(--box-border-width);
+    font-size: 0.8rem;
 }
 
-.role {
+.experience-role {
     display: grid;
     grid-column: calc(1 + (var(--n) - 1) * 4) / calc(6 + (var(--n) - 1) * 4);
     grid-row: 1 / 2;
     text-align: center;
 }
 
-.role:nth-child(odd) {
+.experience-role:nth-child(odd) {
     grid-row: 1 / 2;
     align-items: end;
 }
 
-.role:nth-child(even) {
+.experience-role:nth-child(even) {
     grid-row: 7 / 8;
     align-items: start;
 }
 
-.timeline-segment {
+.experience-timeline-segment {
     grid-column: calc(1 + (var(--n) - 1) * 4) / calc(1 + (var(--n) - 1) * 4);
     grid-row: 4 / 5;
 }
 
-.timeline-segment:nth-child(1 of .timeline-segment) {
+.experience-timeline-segment:nth-child(1 of .experience-timeline-segment) {
     background: linear-gradient(135deg, #00dcff, #2bd5ff);
 }
 
-.timeline-segment:nth-child(2 of .timeline-segment) {
-    background: linear-gradient(135deg, #00dcff, #80a3ff);
+.experience-timeline-segment:nth-child(2 of .experience-timeline-segment) {
+    background: linear-gradient(135deg, #45ccff, #9192ff);
 }
 
-.timeline-segment:nth-child(3 of .timeline-segment) {
+.experience-timeline-segment:nth-child(3 of .experience-timeline-segment) {
     background: linear-gradient(135deg, #ac72ff, #e600ff);
 }
 
-.timeline-segment:nth-child(4 of .timeline-segment) {
+.experience-timeline-segment:nth-child(4 of .experience-timeline-segment) {
     background: linear-gradient(135deg, #ed00d3, #f60094);
 }
 
-.timeline-segment:nth-child(5 of .timeline-segment) {
+.experience-timeline-segment:nth-child(5 of .experience-timeline-segment) {
     background: linear-gradient(135deg, #fb0073, #ff005b);
 }
 
-.timeline-segment:nth-child(6 of .timeline-segment) {
+.experience-timeline-segment:nth-child(6 of .experience-timeline-segment) {
     background: linear-gradient(135deg, #ff035b, #ff005b);
 }
 
-.circle {
+.experience-circle {
     display: grid;
     place-items: center;
     grid-column: calc(2 + (var(--n) - 1) * 4) / calc(5 + (var(--n) - 1) * 4);
@@ -112,27 +96,27 @@
     padding: 2px;
 }
 
-.circle:nth-child(1 of .circle) {
+.experience-circle:nth-child(1 of .experience-circle) {
     background: linear-gradient(135deg, #00dcff, #2bd5ff);
 }
 
-.circle:nth-child(2 of .circle) {
+.experience-circle:nth-child(2 of .experience-circle) {
     background: linear-gradient(135deg, #6cb4ff, #c058ff);
 }
 
-.circle:nth-child(3 of .circle) {
+.experience-circle:nth-child(3 of .experience-circle) {
     background: linear-gradient(135deg, #d632ff, #f200ae);
 }
 
-.circle:nth-child(4 of .circle) {
+.experience-circle:nth-child(4 of .experience-circle) {
     background: linear-gradient(135deg, #f200b5, #ff005a);
 }
 
-.circle:nth-child(5 of .circle) {
+.experience-circle:nth-child(5 of .experience-circle) {
     background: linear-gradient(135deg, #ff005a, #ff005a);
 }
 
-.circle-inner {
+.experience-circle-inner {
     display: grid;
     place-items: center;
     width: 100%;
@@ -141,7 +125,40 @@
     background: #0e141e;
 }
 
-.arrow {
+.experience-connector {
+    grid-column: calc(3 + (var(--n) - 1) * 4) / calc(4 + (var(--n) - 1) * 4);
+    background-color: red;
+}
+
+.experience-connector:nth-child(odd) {
+    grid-row: 2 / 3;
+}
+
+.experience-connector:nth-child(even) {
+    grid-row: 6 / 7;
+}
+
+.experience-connector:nth-child(1 of .experience-connector) {
+    background: linear-gradient(135deg, #00dcff, #13daff);
+}
+
+.experience-connector:nth-child(2 of .experience-connector) {
+    background: linear-gradient(135deg, #ab75ff, #cb47ff);
+}
+
+.experience-connector:nth-child(3 of .experience-connector) {
+    background: linear-gradient(135deg, #d03fff, #de29e8);
+}
+
+.experience-connector:nth-child(4 of .experience-connector) {
+    background: linear-gradient(135deg, #fc0376, #fd0268);
+}
+
+.experience-connector:nth-child(5 of .experience-connector) {
+    background: linear-gradient(135deg, #ff005a, #ff005a);
+}
+
+.experience-arrow {
     grid-column: 22 / 23;
     grid-row: 3 / 6;
     background: linear-gradient(135deg, #ff005a, #ff005a);

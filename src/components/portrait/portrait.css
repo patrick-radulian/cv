@@ -4,26 +4,17 @@
     --row-start: 1;
     --row-end: 5;
 
-    --portrait-bg-offset: 1;
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 3 / -1;
 
     --gradient-degrees: 270deg;
     --gradient-start: #0c141e;
     --gradient-end: #15131b;
 }
 
-.box.portrait {
-    display: grid;
-    grid-template-columns: [image-start background-start] auto [image-end background-end];
-    grid-template-rows:
-        [image-start]
-        calc(var(--grid-column-width) * var(--portrait-bg-offset))
-        [background-start]
-        auto
-        [image-end background-end];
-}
-
 .portrait-image {
-    grid-area: image;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -33,11 +24,4 @@
     width: 100%;
     aspect-ratio: 1;
     margin-bottom: 2px;
-}
-
-.portrait-background {
-    grid-area: background;
-    display: grid;
-    grid-template-columns: 2px auto 2px;
-    grid-template-rows: 2px auto 2px;
 }

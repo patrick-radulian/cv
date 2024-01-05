@@ -4,25 +4,30 @@
     --row-start: 5;
     --row-end: 7;
 
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
     --gradient-degrees: 180deg;
     --gradient-start: #16151c;
     --gradient-end: #12151d;
 
-    font-size: 3rem;
+    text-align: end;
+    font-size: 3.5rem;
 }
 
-.text-container {
+.name-text-container {
     display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    justify-content: end;
     align-items: center;
-    height: 100%;
 }
 
-.text {
+.name-text {
     background: linear-gradient(to bottom right, #00dcff, #00dcff 25%, #e600ff 50%, #ff005a 75%, #ff005a);
     background-clip: text;
     color: transparent;
-    margin: 0;
-    text-align: var(--text-align);
+    padding-right: var(--box-content-padding);
     line-height: 1;
     font-size: inherit;
 }

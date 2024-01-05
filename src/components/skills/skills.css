@@ -1,22 +1,28 @@
 .skills {
-    --col-start: 1;
+    --col-start: 6;
     --col-end: 12;
     --row-start: 11;
-    --row-end: 13;
+    --row-end: 14;
 
-    --grid-template-rows: 1fr;
-    --grid-template-columns: repeat(6, 1fr);
-    --grid-gap: 1rem;
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
+    --link-col-span: 1;
+    --link-row-span: 1;
 
     --gradient-degrees: 215deg;
     --gradient-start: #0c161f;
     --gradient-end: #0c1520;
 }
 
-.skills-list {
+.skills-grid {
     display: grid;
-    height: 100%;
-    grid-template-rows: var(--grid-template-rows);
-    grid-template-columns: var(--grid-template-columns);
-    gap: var(--grid-gap);
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.skills-image-link {
+    padding: var(--box-content-padding);
 }

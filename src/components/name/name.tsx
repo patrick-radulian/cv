@@ -1,16 +1,17 @@
 import React from "react";
 import "./name.css";
 import Box from "components/box/box";
-import BoxContent from "components/box-content/box-content";
 
 const Name: React.FC = () => {
     return (
         <Box className="name">
-            <BoxContent>
-                <div className="text-container">
-                    <h1 className="text">Patrick Radulian</h1>
-                </div>
-            </BoxContent>
+            <div className="name-text-container">
+                <h1 className="name-text">
+                    Patrick
+                    <br />
+                    Radulian
+                </h1>
+            </div>
         </Box>
     );
 };

@@ -4,8 +4,9 @@
     --row-start: 7;
     --row-end: 9;
 
-    --grid-template-rows: 68px;
-    
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
     --gradient-degrees: 135deg;
     --gradient-start: #0e131a;
     --gradient-end: #0e141e;
@@ -13,6 +14,7 @@
 
 .github-image {
     display: grid;
-    grid-template-rows: var(--grid-template-rows);
-    grid-template-columns: 1fr;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    padding: var(--box-content-padding);
 }

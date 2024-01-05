@@ -1,5 +1,7 @@
 .image-link {
     display: grid;
+    grid-column: span var(--link-col-span, 1);
+    grid-row: span var(--link-row-span, 1);
     grid-template-rows: 1fr auto;
     grid-template-columns: auto;
     justify-items: center;

@@ -1,12 +1,11 @@
 import React from "react";
 import "./ux-experience.css";
 import Box from "components/box/box";
-import BoxContent from "components/box-content/box-content";
 
 const UXExperience: React.FC = () => {
     return (
         <Box className="ux">
-            <BoxContent>
+            <div className="ux-grid">
                 <div className="ux-experience">
                     <h1 className="ux-number">3</h1>
                     <span className="ux-years">yr</span>
@@ -17,7 +16,7 @@ const UXExperience: React.FC = () => {
                     <br />
                     Design
                 </p>
-            </BoxContent>
+            </div>
         </Box>
     );
 };

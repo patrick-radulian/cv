@@ -7,25 +7,55 @@ import AFFINITY from "src/images/icons/Affinity.svg";
 import PROTOIO from "src/images/icons/ProtoIO.svg";
 import ImageLink from "components/image-link/image-link";
 import Box from "components/box/box";
-import BoxContent from "components/box-content/box-content";
 
 const Tools: React.FC = () => {
+    const tools = [
+        {
+            src: FIGMA,
+            to: "https://www.figma.com/",
+            target: "_blank",
+            label: "Figma",
+        },
+        {
+            src: PROTOIO,
+            to: "https://proto.io/",
+            target: "_blank",
+            label: "Proto.io",
+        },
+        {
+            src: ADOBECS,
+            to: "https://www.adobe.com/creativecloud.html",
+            target: "_blank",
+            label: "AdobeCS",
+        },
+        {
+            src: AFFINITY,
+            to: "https://affinity.serif.com/",
+            target: "_blank",
+            label: "Affinity",
+        },
+        {
+            src: UNREAL,
+            to: "https://www.unrealengine.com/",
+            target: "_blank",
+            label: "Unreal",
+        },
+    ];
+
     return (
         <Box className="tools">
-            <BoxContent>
-                <div className="tools-list">
-                    <ImageLink src={FIGMA} to="https://www.figma.com/" target="_blank" label="Figma" />
-                    <ImageLink src={PROTOIO} to="https://proto.io/" target="_blank" label="Proto.io" />
+            <div className="tools-grid">
+                {tools.map((tool) => (
                     <ImageLink
-                        src={ADOBECS}
-                        to="https://www.adobe.com/creativecloud.html"
-                        target="_blank"
-                        label="AdobeCS"
+                        className="tools-image-link"
+                        key={tool.src}
+                        src={tool.src}
+                        to={tool.to}
+                        target={tool.target}
+                        label={tool.label}
                     />
-                    <ImageLink src={AFFINITY} to="https://affinity.serif.com/" target="_blank" label="Affinity" />
-                    <ImageLink src={UNREAL} to="https://www.unrealengine.com/" target="_blank" label="Unreal Engine" />
-                </div>
-            </BoxContent>
+                ))}
+            </div>
         </Box>
     );
 };
