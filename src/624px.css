@@ -1,131 +1,194 @@
 @media screen and (max-width: 624px) {
     :root {
-        --grid-column-width: 2.5rem;
-        --grid-columns: 9;
-        --grid-auto-rows: 2.5rem;
-        --box-content-padding: 0.75rem;
+        --grid-column-width: 1rem;
+        --grid-columns: 16;
+        --grid-auto-rows: 1rem;
+        --grid-gap: 0.5rem;
+        --box-content-padding: 1rem;
     }
 
     .about {
         --col-start: 1;
-        --col-end: 10;
-        --row-start: 5;
-        --row-end: 14;
+        --col-end: 17;
+        --row-start: 7;
+        --row-end: 22;
+    }
+
+    .about-title {
+        grid-row: 1 / 4;
+    }
+
+    .about-text-container {
+        grid-row: 4 / -1;
     }
 
     .portrait {
-        --col-start: 6;
-        --col-end: 10;
+        --col-start: 11;
+        --col-end: 17;
         --row-start: 1;
-        --row-end: 5;
+        --row-end: 7;
+
+        --bg-grid-col: 1 / -1;
+        --bg-grid-row: 3 / -1;
     }
 
     .name {
         --col-start: 1;
-        --col-end: 5;
+        --col-end: 10;
         --row-start: 3;
-        --row-end: 5;
+        --row-end: 7;
 
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         --text-align: start;
     }
 
     .front-end {
-        --col-start: 7;
-        --col-end: 10;
-        --row-start: 23;
-        --row-end: 26;
+        --col-start: 1;
+        --col-end: 9;
+        --row-start: 22;
+        --row-end: 30;
 
-        --box-content-padding: 0.2rem;
-        --number-size: 2.8rem;
-        --years-size: 1.2rem;
-        --text-size: 0.9rem;
-        --line-height: 1.2;
+        --number-size: 5rem;
+        --years-size: 2rem;
+        --text-size: 1.5rem;
+        --line-height: 1.25;
+    }
+
+    .front-end-experience {
+        grid-column: 1 / -1;
+        grid-row: 1 / 5;
+    }
+
+    .front-end-text {
+        grid-column: 1 / -1;
+        grid-row: 5 / -1;
     }
 
     .ux {
-        --col-start: 7;
-        --col-end: 10;
-        --row-start: 26;
-        --row-end: 29;
+        --col-start: 9;
+        --col-end: 17;
+        --row-start: 22;
+        --row-end: 30;
 
-        --box-content-padding: 0.2rem;
-        --number-size: 2.8rem;
-        --years-size: 1.2rem;
-        --text-size: 0.9rem;
-        --line-height: 1.2;
+        --number-size: 5rem;
+        --years-size: 2rem;
+        --text-size: 1.5rem;
+        --line-height: 1.25;
+    }
+
+    .ux-grid {
+        grid-template-rows: subgrid;
+        grid-template-columns: subgrid;
+    }
+
+    .ux-experience {
+        grid-column: 1 / -1;
+        grid-row: 1 / 5;
+    }
+
+    .ux-text {
+        grid-column: 1 / -1;
+        grid-row: 5 / -1;
     }
 
     .experience {
         --col-start: 1;
-        --col-end: 10;
-        --row-start: 15;
-        --row-end: 23;
+        --col-end: 17;
+        --row-start: 29;
+        --row-end: 42;
+
+        --bg-grid-col: 3 / -1;
+        --bg-grid-row: 2 / -1;
 
         --title-offset: calc(var(--grid-column-width));
     }
 
+    .experience-title {
+        grid-column: 4 / -1;
+        grid-row: 2 / 5;
+    }
+
+    .experience-timeline {
+        grid-column: 3 / -1;
+        grid-row: 5 / -1;
+    }
+
+    .experience-image {
+        grid-column: 1 / 5;
+        grid-row: 1 / 5;
+    }
+
     .skills {
         --col-start: 1;
-        --col-end: 7;
-        --row-start: 25;
-        --row-end: 31;
+        --col-end: 13;
+        --row-start: 42;
+        --row-end: 50;
+
+        --link-col-span: 4;
+        --link-row-span: 4;
 
         --box-content-padding: 0.75rem;
-        --grid-template-rows: repeat(3, 1fr);
-        --grid-template-columns: repeat(2, 1fr);
         --grid-gap: 1rem;
     }
 
-    .web {
-        --col-start: 2;
-        --col-end: 10;
-        --row-start: 31;
-        --row-end: 33;
+    .skills-grid {
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+    }
 
-        --box-content-padding: 0.5rem;
+    .web {
+        --col-start: 13;
+        --col-end: 17;
+        --row-start: 42;
+        --row-end: 58;
+
+        --link-col-span: 4;
+        --link-row-span: 4;
+
+        --box-content-padding: 1rem;
+    }
+
+    .web-grid {
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
     }
 
     .tools {
         --col-start: 1;
         --col-end: 9;
-        --row-start: 33;
-        --row-end: 37;
+        --row-start: 50;
+        --row-end: 62;
 
-        --box-content-padding: 0.75rem;
-        --grid-template-rows: repeat(2, 1fr);
-        --grid-template-columns: repeat(3, 1fr);
-        --grid-gap: 1rem;
+        --link-col-span: 4;
+        --link-row-span: 4;
+
+        --box-content-padding: 1rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
     }
 
     .github {
-        --col-start: 3;
-        --col-end: 5;
-        --row-start: 23;
-        --row-end: 25;
-
-        --grid-template-rows: 50px;
-        --box-content-padding: 0.3rem;
+        --col-start: 9;
+        --col-end: 13;
+        --row-start: 54;
+        --row-end: 58;
     }
 
     .codepen {
-        --col-start: 1;
-        --col-end: 3;
-        --row-start: 23;
-        --row-end: 25;
-
-        --grid-template-rows: 50px;
-        --box-content-padding: 0.3rem;
+        --col-start: 9;
+        --col-end: 13;
+        --row-start: 50;
+        --row-end: 54;
     }
 
     .portfolio-link {
-        --col-start: 5;
-        --col-end: 7;
-        --row-start: 23;
-        --row-end: 25;
-
-        --grid-template-rows: 50px;
-        --box-content-padding: 0.3rem;
+        --col-start: 9;
+        --col-end: 13;
+        --row-start: 58;
+        --row-end: 62;
     }
 
     .portfolio-title {
@@ -140,5 +203,12 @@
         --col-end: 10;
         --row-start: 4;
         --row-end: 33;
+    }
+
+    .disclaimer-home {
+        --col-start: 1;
+        --col-end: 17;
+        --row-start: 62;
+        --row-end: 65;
     }
 }

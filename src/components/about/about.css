@@ -12,18 +12,18 @@
     --gradient-end: #181318;
 }
 
-.about .subgrid {
-    padding: var(--box-content-padding);
-}
-
 .about-title {
+    display: flex;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    padding: var(--box-content-padding);
+    align-items: center;
 }
 
 .about-text-container {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
+    padding-inline: var(--box-content-padding);
 }
 
 .about-text {
