@@ -10,14 +10,12 @@ import Sketches from "components/sketches/sketches";
 const Portfolio: React.FC = () => {
     return (
         <React.Fragment>
-            <Box className="portfolio-title">
+            <Box className="portfolio-title-box">
                 <h1>Portfolio</h1>
                 <h4>Work in Progress</h4>
             </Box>
 
-            <Box className="portfolio-container">
-                <Sketches />
-            </Box>
+            <Sketches />
         </React.Fragment>
     );
 };

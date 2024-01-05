@@ -20,6 +20,7 @@ import Sketch12 from "src/images/portfolio/sketches/Sidebar Menu.jpg";
 import Sketch13 from "src/images/portfolio/sketches/Sidebar Menu Collapse Study.jpg";
 import Sketch14 from "src/images/portfolio/sketches/(Bonus) Workshop Plan - Part 1.jpg";
 import Sketch15 from "src/images/portfolio/sketches/(Bonus) Workshop Plan - Part 2.jpg";
+import Box from "components/box/box";
 
 const Sketches: React.FC = () => {
     const [index, setIndex] = React.useState(-1);
@@ -43,34 +44,36 @@ const Sketches: React.FC = () => {
     ];
 
     return (
-        <React.Fragment>
+        <Box className="sketches">
             <h1 className="sketches-title">Sketches</h1>
 
-            <PhotoAlbum
-                layout="rows"
-                photos={photos}
-                targetRowHeight={150}
-                onClick={({ index: current }) => setIndex(current)}
-                spacing={20}
-                renderPhoto={({ imageProps: { src, alt, style, ...restImageProps } }) => (
-                    <img
-                        src={src}
-                        alt={alt}
-                        style={{ ...style, border: "1px solid var(--shadow)" }}
-                        {...restImageProps}
-                    />
-                )}
-            ></PhotoAlbum>
+            <div className="sketches-album">
+                <PhotoAlbum
+                    layout="rows"
+                    photos={photos}
+                    targetRowHeight={150}
+                    onClick={({ index: current }) => setIndex(current)}
+                    spacing={20}
+                    renderPhoto={({ imageProps: { src, alt, style, ...restImageProps } }) => (
+                        <img
+                            src={src}
+                            alt={alt}
+                            style={{ ...style, border: "1px solid var(--shadow)" }}
+                            {...restImageProps}
+                        />
+                    )}
+                ></PhotoAlbum>
 
-            <Lightbox
-                plugins={[Captions]}
-                index={index}
-                slides={photos}
-                open={index >= 0}
-                close={() => setIndex(-1)}
-                carousel={{ finite: true }}
-            />
-        </React.Fragment>
+                <Lightbox
+                    plugins={[Captions]}
+                    index={index}
+                    slides={photos}
+                    open={index >= 0}
+                    close={() => setIndex(-1)}
+                    carousel={{ finite: true }}
+                />
+            </div>
+        </Box>
     );
 };
 

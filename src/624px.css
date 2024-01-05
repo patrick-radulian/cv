@@ -191,18 +191,30 @@
         --row-end: 62;
     }
 
-    .portfolio-title {
-        --col-start: 1;
-        --col-end: 10;
+    .portfolio-title-box {
         --row-start: 1;
-        --row-end: 4;
+        --row-end: 5;
     }
 
-    .portfolio-container {
-        --col-start: 1;
-        --col-end: 10;
-        --row-start: 4;
-        --row-end: 33;
+    .portfolio-title-box h1 {
+        grid-row: 1 / 3;
+    }
+
+    .portfolio-title-box h4 {
+        grid-row: 3 / 5;
+    }
+
+    .sketches {
+        --row-start: 5;
+        --row-end: 56;
+    }
+
+    .sketches-title {
+        grid-row: 1 / 4;
+    }
+
+    .sketches-album {
+        grid-row: 4 / 52;
     }
 
     .disclaimer-home {

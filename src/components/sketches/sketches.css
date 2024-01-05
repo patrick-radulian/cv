@@ -1,3 +1,27 @@
+.sketches {
+    --col-start: 1;
+    --col-end: -1;
+    --row-start: 3;
+    --row-end: 8;
+
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
+    --gradient-degrees: 80deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #181318;
+}
+
 .sketches-title {
-    margin-bottom: 1rem;
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: var(--box-content-padding);
+    align-items: center;
+}
+
+.sketches-album {
+    grid-column: 1 / -1;
+    grid-row: 2 / 6;
+    padding-inline: var(--box-content-padding);
 }
