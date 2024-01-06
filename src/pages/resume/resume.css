@@ -1,6 +1,6 @@
 .disclaimer-home {
     --col-start: 1;
-    --col-end: 7;
+    --col-end: 8;
     --row-start: 14;
     --row-end: 15;
 
@@ -12,11 +12,19 @@
     --gradient-end: #12161d;
 }
 
-.disclaimer-home-text {
+.disclaimer-text {
     display: flex;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    gap: 0.5ch;
     align-items: center;
-    justify-content: start;
-    padding-left: var(--box-content-padding);
+    padding: var(--box-content-padding);
+}
+
+.browsers-list {
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    grid-template-rows: 1fr;
+    flex: 0;
+    height: 100%;
 }

@@ -22,6 +22,24 @@ import Firefox from "src/images/icons/Firefox.svg";
 import Edge from "src/images/icons/Edge.svg";
 
 const Resume: React.FC = () => {
+    const browsers = [
+        {
+            label: "Chrome",
+            src: Chrome,
+            to: "https://www.google.com/chrome/",
+        },
+        {
+            label: "Firefox",
+            src: Firefox,
+            to: "https://www.mozilla.org/en-US/firefox/new/",
+        },
+        {
+            label: "Edge",
+            src: Edge,
+            to: "https://www.microsoft.com/en-us/edge",
+        },
+    ];
+
     return (
         <React.Fragment>
             <About />
@@ -38,10 +56,23 @@ const Resume: React.FC = () => {
             <Tools />
 
             <Box className="disclaimer-home">
-                <ImageLink className="browser-image" src={Chrome} to="" target="_blank" alt="Chrome"/>
-                <ImageLink className="browser-image" src={Firefox} to="" target="_blank" alt="Firefox"/>
-                <ImageLink className="browser-image" src={Edge} to="" target="_blank" alt="Edge"/>
-                {/* <p className="disclaimer-home-text">Mobile version: work in progress</p> */}
+                <div className="disclaimer-text">
+                    <p>Best viewed on</p>
+
+                    <div className="browsers-list">
+                        {browsers.map((browser) => (
+                            <ImageLink
+                                key={browser.label}
+                                src={browser.src}
+                                to={browser.to}
+                                target="_blank"
+                                alt={browser.label}
+                            />
+                        ))}
+                    </div>
+
+                    <p>(Mobile version: work in progress)</p>
+                </div>
             </Box>
         </React.Fragment>
     );
