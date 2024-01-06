@@ -1,36 +1,60 @@
 .image-link {
     display: grid;
+    min-width: 0;
+    min-height: 0;
+    justify-items: center;
     grid-column: span var(--link-col-span, 1);
     grid-row: span var(--link-row-span, 1);
-    grid-template-rows: 1fr auto;
+    grid-template-rows: minmax(0, 1fr) min-content;
     grid-template-columns: auto;
-    justify-items: center;
     gap: 0.5rem;
 }
 
-.image-mask {
-    display: flex;
+
+.masked-image {
+    display: block;
     height: 100%;
-    aspect-ratio: 1;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    object-fit: contain;
     background: linear-gradient(to bottom right, white 8rem, #00dcff 8rem, #00dcff 12rem, #e600ff 14rem, #ff005a 16rem);
     mask-image: var(--mask-src);
+    mask-size: contain;
+    mask-position: 50% 0;
+    mask-repeat: no-repeat;
     background-size: 16rem 16rem;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     transition: background-position 0.15s linear;
 }
 
-.image-link:hover .image-mask {
+.image {
+    display: none;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    object-fit: contain;
+}
+
+@supports not (mask-image: url()) {
+    .masked-image {
+        display: none;
+    }
+
+    .image {
+        display: block;
+    }
+}
+
+.image-link:hover .masked-image {
     background-position: -8rem -8rem;
 }
 
-.image-link img {
-    max-height: 100%;
-    aspect-ratio: 1;
-    opacity: 0;
-}
-
 .image-link-label {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
     font-size: 0.75rem;
     color: var(--primary);
     text-align: center;

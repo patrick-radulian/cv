@@ -31,6 +31,7 @@ const Resume: React.FC = () => {
             <UXExperience />
             <Web />
             <Tools />
+
             <Box className="disclaimer-home">
                 <p className="disclaimer-home-text">Mobile version: work in progress</p>
             </Box>
