@@ -10,6 +10,10 @@
     gap: 0.5rem;
 }
 
+.image-link.no-label {
+    grid-template-rows: auto;
+    gap: 0;
+}
 
 .masked-image {
     display: block;

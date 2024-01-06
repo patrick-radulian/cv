@@ -13,9 +13,11 @@ type ImageLinkProps = {
 };
 
 const ImageLink: React.FC<ImageLinkProps> = (props: ImageLinkProps) => {
+    const className = `image-link ${props.className ?? ""} ${!props.label ? "no-label" : ""}`;
+
     return (
-        <Link to={props.to} target={props.target} className={`${props.className} image-link`}>
-            <div className="masked-image" style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }}/>
+        <Link to={props.to} target={props.target} className={className}>
+            <div className="masked-image" style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }} />
             <img className="image" src={props.src} alt={props.alt ?? props.label} loading="lazy" />
             {props.label && <span className="image-link-label">{props.label}</span>}
         </Link>

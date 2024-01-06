@@ -15,6 +15,11 @@ import Codepen from "components/codepen/codepen";
 import GitHub from "components/github/github";
 import Portfolio from "components/portfolio-link/portfolio-link";
 import Box from "components/box/box";
+import ImageLink from "components/image-link/image-link";
+
+import Chrome from "src/images/icons/Chrome.svg";
+import Firefox from "src/images/icons/Firefox.svg";
+import Edge from "src/images/icons/Edge.svg";
 
 const Resume: React.FC = () => {
     return (
@@ -33,7 +38,10 @@ const Resume: React.FC = () => {
             <Tools />
 
             <Box className="disclaimer-home">
-                <p className="disclaimer-home-text">Mobile version: work in progress</p>
+                <ImageLink className="browser-image" src={Chrome} to="" target="_blank" alt="Chrome"/>
+                <ImageLink className="browser-image" src={Firefox} to="" target="_blank" alt="Firefox"/>
+                <ImageLink className="browser-image" src={Edge} to="" target="_blank" alt="Edge"/>
+                {/* <p className="disclaimer-home-text">Mobile version: work in progress</p> */}
             </Box>
         </React.Fragment>
     );
