@@ -1,20 +1,62 @@
 .codepen {
-    --col-start: 15;
-    --col-end: 17;
-    --row-start: 5;
-    --row-end: 7;
+    --col-start: 1;
+    --col-end: -1;
+    --row-start: 8;
+    --row-end: 16;
 
     --bg-grid-col: 1 / -1;
     --bg-grid-row: 1 / -1;
 
-    --gradient-degrees: 135deg;
-    --gradient-start: #0f131c;
-    --gradient-end: #0a131e;
+    --gradient-degrees: 80deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #181318;
 }
 
-.codepen-image {
-    display: grid;
+.codepen-title {
+    display: flex;
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 1 / 2;
     padding: var(--box-content-padding);
+    align-items: center;
+}
+
+.codepen-pens {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-column: 2 / -2;
+    grid-row: 2 / 8;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+.codepen-pens .codepen-pen-link {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(0, 1fr) min-content;
+    border-radius: 0.5rem;
+}
+
+.codepen-pen-label {
+    padding: 0.25rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.codepen-pens .codepen-pen-link:nth-child(odd) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.codepen-pens .codepen-pen-link:nth-child(even) {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.codepen-pen-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--tertiary);
 }

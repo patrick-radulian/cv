@@ -177,13 +177,6 @@
         --row-end: 58;
     }
 
-    .codepen {
-        --col-start: 9;
-        --col-end: 13;
-        --row-start: 50;
-        --row-end: 54;
-    }
-
     .portfolio-link {
         --col-start: 9;
         --col-end: 13;
@@ -217,10 +210,37 @@
         grid-row: 4 / 52;
     }
 
-    .disclaimer-home {
+    .codepen {
+        --col-start: 1;
+        --col-end: -1;
+        --row-start: 56;
+        --row-end: 82;
+    }
+
+    .codepen-title {
+        grid-row: 1 / 6;
+    }
+
+    .codepen-pens {
+        grid-row: 6 / -1;
+    }
+
+    .codepen-pens .codepen-pen-link:nth-child(n) {
+        grid-column: span 7;
+        grid-row: span 5;
+    }
+
+    .disclaimer-browsers {
         --col-start: 1;
         --col-end: 17;
         --row-start: 62;
         --row-end: 65;
+    }
+
+    .disclaimer-mobile {
+        --col-start: 1;
+        --col-end: 17;
+        --row-start: 65;
+        --row-end: 68;
     }
 }

@@ -6,6 +6,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 
 import Box from "components/box/box";
 import Sketches from "components/sketches/sketches";
+import CodePen from "components/codepen/codepen";
 
 const Portfolio: React.FC = () => {
     return (
@@ -16,6 +17,8 @@ const Portfolio: React.FC = () => {
             </Box>
 
             <Sketches />
+
+            <CodePen />
         </React.Fragment>
     );
 };

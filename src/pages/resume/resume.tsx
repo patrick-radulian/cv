@@ -11,7 +11,6 @@ import Skills from "components/skills/skills";
 import Tools from "components/tools/tools";
 import Web from "components/web/web";
 import Portrait from "components/portrait/portrait";
-import Codepen from "components/codepen/codepen";
 import GitHub from "components/github/github";
 import Portfolio from "components/portfolio-link/portfolio-link";
 import Box from "components/box/box";
@@ -47,7 +46,6 @@ const Resume: React.FC = () => {
             <FrontEndExperience />
             <Name />
             <GitHub />
-            <Codepen />
             <Portfolio />
             <Experience />
             <Skills />
@@ -55,9 +53,9 @@ const Resume: React.FC = () => {
             <Web />
             <Tools />
 
-            <Box className="disclaimer-home">
+            <Box className="disclaimer-browsers">
                 <div className="disclaimer-text">
-                    <p>Best viewed on</p>
+                    <p>Best viewed on latest versions of</p>
 
                     <div className="browsers-list">
                         {browsers.map((browser) => (
@@ -70,8 +68,12 @@ const Resume: React.FC = () => {
                             />
                         ))}
                     </div>
+                </div>
+            </Box>
 
-                    <p>(Mobile version: work in progress)</p>
+            <Box className="disclaimer-mobile">
+                <div className="disclaimer-text">
+                    <p>Mobile version: work in progress</p>
                 </div>
             </Box>
         </React.Fragment>

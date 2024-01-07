@@ -1,8 +1,22 @@
-.disclaimer-home {
+.disclaimer-browsers {
     --col-start: 1;
-    --col-end: 8;
+    --col-end: 6;
     --row-start: 14;
     --row-end: 15;
+
+    --bg-grid-col: 1 / -1;
+    --bg-grid-row: 1 / -1;
+
+    --gradient-degrees: 45deg;
+    --gradient-start: #0e141f;
+    --gradient-end: #12161d;
+}
+
+.disclaimer-mobile {
+    --col-start: 1;
+    --col-end: 5;
+    --row-start: 15;
+    --row-end: 16;
 
     --bg-grid-col: 1 / -1;
     --bg-grid-row: 1 / -1;

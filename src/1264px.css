@@ -91,13 +91,6 @@
         --row-end: 11;
     }
 
-    .codepen {
-        --col-start: 9;
-        --col-end: 11;
-        --row-start: 6;
-        --row-end: 8;
-    }
-
     .portfolio-link {
         --col-start: 11;
         --col-end: 13;
