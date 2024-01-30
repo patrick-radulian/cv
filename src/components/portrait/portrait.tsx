@@ -1,15 +1,18 @@
 import React from "react";
 import "./portrait.css";
-import Box from "components/box/box";
-import Photo from "src/images/Portrait.png";
+import Photo from "src/images/Portrait 2.png";
 
 const PortraitLink: React.FC = () => {
     return (
-        <Box className="portrait">
-            <div className="portrait-image">
-                <img src={Photo} alt="Portrait" />
+        <div className="box portrait">
+            <div className="box-border-container">
+                <div className="box-content-container"></div>
             </div>
-        </Box>
+
+            <div className="portrait-container">
+                <img src={Photo} className="portrait-image" alt="Portrait" />
+            </div>
+        </div>
     );
 };
 

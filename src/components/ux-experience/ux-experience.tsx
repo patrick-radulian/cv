@@ -1,22 +1,13 @@
 import React from "react";
 import "./ux-experience.css";
 import Box from "components/box/box";
+import UXXP from "src/images/3yr.svg";
+import IconBox from "components/icon-box/icon-box";
 
 const UXExperience: React.FC = () => {
     return (
-        <Box className="ux">
-            <div className="ux-grid">
-                <div className="ux-experience">
-                    <h1 className="ux-number">3</h1>
-                    <span className="ux-years">yr</span>
-                </div>
-
-                <p className="ux-text">
-                    UX
-                    <br />
-                    Design
-                </p>
-            </div>
+        <Box order={5}>
+            <IconBox src_front={UXXP} alt="3 years" label="UI/UX Design" />
         </Box>
     );
 };

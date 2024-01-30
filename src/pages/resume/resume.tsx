@@ -4,21 +4,23 @@ import "./resume.css";
 
 import FrontEndExperience from "components/front-end-experience/front-end-experience";
 import UXExperience from "components/ux-experience/ux-experience";
-import Name from "components/name/name";
 import Experience from "components/experience/experience";
 import About from "components/about/about";
 import Skills from "components/skills/skills";
+import Portrait from "components/portrait/portrait";
+import GitHubLink from "components/github-link/github-link";
+import Container from "components/container/container";
+import PortfolioLink from "components/portfolio-link/portfolio-link";
+import Intro from "components/intro/intro";
+
+import Chrome from "src/images/icons/Chrome_BW.svg";
+import Firefox from "src/images/icons/Firefox_BW.svg";
+import Edge from "src/images/icons/Edge_BW.svg";
+import CodepenLink from "components/codepen-link/codepen-link";
+import LinkedInLink from "components/linkedin-link/linkedin-link";
 import Tools from "components/tools/tools";
 import Web from "components/web/web";
-import Portrait from "components/portrait/portrait";
-import GitHub from "components/github/github";
-import Portfolio from "components/portfolio-link/portfolio-link";
 import Box from "components/box/box";
-import ImageLink from "components/image-link/image-link";
-
-import Chrome from "src/images/icons/Chrome.svg";
-import Firefox from "src/images/icons/Firefox.svg";
-import Edge from "src/images/icons/Edge.svg";
 
 const Resume: React.FC = () => {
     const browsers = [
@@ -41,41 +43,31 @@ const Resume: React.FC = () => {
 
     return (
         <React.Fragment>
+            <Container reverse>
+                <Intro />
+                <Portrait />
+            </Container>
+
             <About />
-            <Portrait />
-            <FrontEndExperience />
-            <Name />
-            <GitHub />
-            <Portfolio />
-            <Experience />
+
+            <div className="center-grid">
+                <FrontEndExperience />
+                <UXExperience />
+                <CodepenLink />
+                <PortfolioLink />
+                <LinkedInLink />
+                <GitHubLink />
+            </div>
+
             <Skills />
-            <UXExperience />
-            <Web />
+
             <Tools />
 
-            <Box className="disclaimer-browsers">
-                <div className="disclaimer-text">
-                    <p>Best viewed on latest versions of</p>
+            <div className="filler" />
 
-                    <div className="browsers-list">
-                        {browsers.map((browser) => (
-                            <ImageLink
-                                key={browser.label}
-                                src={browser.src}
-                                to={browser.to}
-                                target="_blank"
-                                alt={browser.label}
-                            />
-                        ))}
-                    </div>
-                </div>
-            </Box>
+            <Web />
 
-            <Box className="disclaimer-mobile">
-                <div className="disclaimer-text">
-                    <p>Mobile version: work in progress</p>
-                </div>
-            </Box>
+            <Experience />
         </React.Fragment>
     );
 };

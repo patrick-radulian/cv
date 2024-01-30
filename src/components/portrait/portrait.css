@@ -1,27 +1,44 @@
-.portrait {
-    --col-start: 13;
-    --col-end: 17;
-    --row-start: 1;
-    --row-end: 5;
+.box.portrait {
+    flex-basis: 100%;
+    max-width: 20rem;
+    order: 0;
 
-    --bg-grid-col: 1 / -1;
-    --bg-grid-row: 3 / -1;
-
-    --gradient-degrees: 270deg;
-    --gradient-start: #0c141e;
-    --gradient-end: #15131b;
+    & img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0.65rem;
+    }
 }
 
-.portrait-image {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+.box.portrait {
+    display: grid;
+    grid-template-columns: [box-start image-start] auto [image-end box-end];
+    grid-template-rows: [image-start] 3fr [border-start] 5fr [image-end border-end];
+}
+
+.box.portrait .box-border-container {
+    grid-row: border-start / border-end;
+    grid-column: box-start / box-end;
+}
+
+.box.portrait .portrait-container {
     display: flex;
-    justify-content: flex-start;
+    grid-row: image-start / image-end;
+    grid-column: image-start / image-end;
     align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2px;
+    border-radius: 0.75rem;
 }
 
-.portrait-image img {
-    width: 100%;
-    aspect-ratio: 1;
-    margin-bottom: 2px;
+@media screen and (min-width: 180px) {
+    .box.portrait {
+        grid-template-columns: [box-start] 1fr [image-start] 3fr [image-end box-end];
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .box.portrait {
+        flex-basis: auto;
+    }
 }

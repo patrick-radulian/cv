@@ -1,31 +1,34 @@
-.box-bg {
-    display: grid;
-    grid-column: var(--bg-grid-col);
-    grid-row: var(--bg-grid-row);
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-    width: 100%;
+.box {
+    flex: 1 1 auto;
+    min-width: 6rem;
+    border-radius: 0.75rem;
+}
+
+.box-border-container {
     height: 100%;
-    border-radius: var(--box-border-radius);
-    background: linear-gradient(135deg, #00dcff, #00dcff 35%, #e600ff 50%, #ff005a 65%, #ff005a),
-        radial-gradient(circle at var(--circle-x) var(--circle-y), white, #000000aa calc(var(--grid-column-width) * 4));
-    background-blend-mode: overlay;
+    padding: 2px;
+    border-radius: 0.75rem;
+    background: linear-gradient(45deg, #181818, #9e9e9e);
 }
 
-.box-bg-fill {
-    border-radius: calc(1rem - var(--box-border-width));
-    background: linear-gradient(var(--gradient-degrees), var(--gradient-start), var(--gradient-end));
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    margin: var(--box-border-width);
+.box-content-container {
+    height: 100%;
+    border-radius: 0.65rem;
+    background-color: #131313;
+    background-image: radial-gradient(circle at 100% 0, #ffffff05, transparent 30%),
+        radial-gradient(circle at 30% 75%, #ffffff03, transparent 60%);
 }
 
-.box-content {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    margin: var(--box-border-width);
-    border-radius: calc(1rem - var(--box-border-width));
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+@media screen and (min-width: 180px) {
+    .box {
+        border-radius: 1rem;
+    }
+
+    .box-border-container {
+        border-radius: 1rem;
+    }
+
+    .box-content-container {
+        border-radius: 0.9rem;
+    }
 }

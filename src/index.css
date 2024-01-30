@@ -1,16 +1,10 @@
 @import "./properties.css";
 @import "./variables.css";
 
-@import "./box.css";
-
-@import "./1264px.css";
-@import "./944px.css";
-@import "./624px.css";
-
 :root {
-    background: radial-gradient(circle at 50% 0, rgb(36 20 20 / 80%), rgba(255, 0, 0, 0) 70.71%),
-        radial-gradient(circle at 6.7% 75%, rgb(19 23 31 / 80%), rgba(0, 0, 255, 0) 70.71%),
-        radial-gradient(circle at 93.3% 75%, rgb(15 21 23 / 60%), rgba(0, 255, 0, 0) 70.71%) #001223;
+    background: radial-gradient(circle at 50% 0, rgba(15, 15, 15, 0.8), rgba(255, 255, 255, 0) 70.71%),
+        radial-gradient(circle at 6.7% 75%, rgba(8, 8, 8, 0.8), rgba(255, 255, 255, 0) 70.71%),
+        radial-gradient(circle at 93.3% 75%, rgba(10, 10, 10, 0.6), rgba(255, 255, 255, 0) 70.71%) #111;
     background-attachment: fixed;
 }
 
@@ -19,10 +13,9 @@ body {
     color: var(--primary);
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.32;
+    font-weight: 300;
 }
 
 * {
@@ -31,6 +24,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
@@ -47,6 +41,10 @@ a[href="#/"] {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 h1,
 h2,
 h3,
@@ -55,8 +53,4 @@ h5,
 h6,
 p {
     margin: 0;
-}
-
-img {
-    display: block;
 }

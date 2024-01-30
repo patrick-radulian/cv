@@ -1,19 +1,8 @@
 .grid {
-    --cols: calc(var(--grid-columns) * var(--grid-column-width));
-    --gaps: calc((var(--grid-columns) - 1) * var(--grid-gap));
-    position: relative;
-    width: calc(var(--cols) + var(--gaps));
-    margin: var(--grid-gap) auto;
-    display: grid;
-    grid-template-columns: repeat(var(--grid-columns), var(--grid-column-width));
-    grid-auto-rows: var(--grid-auto-rows);
-    grid-gap: var(--grid-gap);
-}
-
-.subgrid {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 56rem;
+    margin: auto;
+    padding: 0.5rem;
 }

@@ -1,15 +1,21 @@
 import React from "react";
 import "./portfolio-link.css";
 import Box from "components/box/box";
-import ImageLink from "components/image-link/image-link";
-import PortfolioIcon from "src/images/icons/Portfolio.svg";
+import Portfolio_BW from "src/images/icons/Portfolio_BW.svg";
+import Portfolio_Color from "src/images/icons/Portfolio_Color.svg";
+import IconBox from "components/icon-box/icon-box";
 
 const PortfolioLink: React.FC = () => {
     return (
-        <Box className="portfolio-link">
-            <div className="portfolio-link-image">
-                <ImageLink src={PortfolioIcon} to="/portfolio" label="Portfolio" />
-            </div>
+        <Box order={10}>
+            <IconBox
+                src_front={Portfolio_BW}
+                src_back={Portfolio_Color}
+                alt="Portfolio"
+                label="Port&shy;folio"
+                to="/portfolio"
+                isLink
+            />
         </Box>
     );
 };

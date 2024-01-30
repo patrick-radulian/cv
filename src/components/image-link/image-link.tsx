@@ -5,10 +5,9 @@ import "./image-link.css";
 type ImageLinkProps = {
     label?: string;
     alt?: string;
-    src: string;
+    imgSrc: string;
     to: To;
     target?: React.HTMLAttributeAnchorTarget;
-    isRouterLink?: boolean;
     className?: string;
 };
 
@@ -16,10 +15,9 @@ const ImageLink: React.FC<ImageLinkProps> = (props: ImageLinkProps) => {
     const className = `image-link ${props.className ?? ""} ${!props.label ? "no-label" : ""}`;
 
     return (
-        <Link to={props.to} target={props.target} className={className}>
-            <div className="masked-image" style={{ ["--mask-src" as string]: `url(${props.src}#mask)` }} />
-            <img className="image" src={props.src} alt={props.alt ?? props.label} loading="lazy" />
-            {props.label && <span className="image-link-label">{props.label}</span>}
+        <Link to={props.to} target={props.target} className={className} >
+            <img className="image" src={props.imgSrc} alt={props.alt ?? props.label} loading="lazy" />
+            {props.label && <span className="image-link-label" dangerouslySetInnerHTML={{ __html: props.label }} />}
         </Link>
     );
 };
