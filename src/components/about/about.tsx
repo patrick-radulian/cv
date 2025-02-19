@@ -8,7 +8,8 @@ const About: React.FC = () => {
             <h1 className="about-title">About</h1>
 
             <p className="about-text">
-                I am a UI/UX designer with an <em>extra&shy;ordinary tech&shy;nical founda&shy;tion</em>, coun&shy;ting
+                I am a front-end engineer and aspiring UI/UX designer with an
+                <em>extra&shy;ordinary tech&shy;nical founda&shy;tion</em>, coun&shy;ting
                 over 12 years of front&shy;-end enginee&shy;ring experi&shy;ence, doing both{" "}
                 <em>tech&shy;nical and design work</em> - 8 of them working on{" "}
                 <em>enter&shy;prise level applica&shy;tions</em> with 3 years spent exlu&shy;sively on UI/UX design.
